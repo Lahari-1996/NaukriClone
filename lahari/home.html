@@ -9,19 +9,25 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <style>
+       *{
+           font-family:Roboto,sans-serif;;
+       }
         #navbar{
             width: 100%;
-            height: 85px;
+            height: 85px !important;
             font-family:Roboto,sans-serif;
             background-color: white;
             position: fixed;
             top: 0;
             left: 0;
             display: flex;
+            z-index: 1;
+            
         }
+    
         #left{
             width: 240px;
-            margin-left: 230px;
+            margin-left: 200px;
         }
         #left:hover{
             cursor: pointer;
@@ -29,83 +35,238 @@
         #left>img{
             width: 100%;
             margin-top: 20px;
+        }
 
-        }
-        #mid{
-            width: 400px; 
-            margin-left: 180px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            
-        }
-        #mid>div{
-            height: 100%;
-            padding-left: 20px;
-            padding-right: 20px;
-            font-size: 16px;
-            display:flex;
-            align-items: center;
-        }
-        #mid>div:hover{
-            cursor: pointer;
-            background-color: rgb(229, 228, 228);
-            font-weight: bold;
-            color: blue;
-            text-decoration-line: underline;
-             text-decoration-thickness: 4px;
-        }
+
+        .mid{
+           
+           width: 680px; 
+           height: 85px;
+           margin-left: 60px;
+           background-color: white;
         
-        #right{
-            width: 180px;
-            margin-left: 350px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center; 
-        }
-        #right>div:nth-child(2){
-          font-size: 16px;
-          height: 100%;
-          
-          padding-left: 20px;
-            padding-right: 10px;
-          display:flex;
-            align-items: center;
-        }
-        #right>div:nth-child(2):hover{
-            cursor: pointer;
-            background-color: rgb(229, 228, 228);
-            font-weight: bold;
-            color: rgb(77, 77, 232);
-            text-decoration-line: underline;
-             text-decoration-thickness: 4px;
-        }
+       }
+       .mid ul{
+
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+           color: gray;
+           margin-top: 33px;
+           list-style: none;
+   }
+   .mid ul li{
+     
+           height: 100%;
+           padding-left: 20px;
+           padding-right: 20px;
+           font-size: 16px;
+           font-family: Roboto sans-serif;
+           padding-top: 32px;
+         padding-bottom: 34px;
+          margin-top: -33px;
+   } 
+   .mid ul li a{
+       text-decoration: none;
+       color:grey;
+
+   }
+ 
+   .active,.mid ul li:hover{
+       
+       background-color: rgb(229, 228, 228);
+       color: blue !important;
+       text-decoration-line: underline;
+       text-decoration-color: blue;
+       cursor: pointer;
+       font-weight: bold;
+       text-decoration-thickness: 4px;
+ 
+       
+   }
+   .mid ul li:hover{
+       background-color: rgb(229, 228, 228);
+       padding-top: 32px;
+       padding-bottom: 32px;
+       margin-top: -33px;
+       color: blue;
+       text-decoration-line: underline;
+       text-decoration-color: blue;
+       
+   }
+   .jobchild{
+       display: none;
+      
+   }
+  
+   .mid ul li:hover .jobchild{
+       display: block;
+       position:absolute;
+       background-color: rgb(229, 228, 228);
+       width: auto;
+       height: auto;
+       padding: 15px;
+       margin-top: 32px;
+       margin-left: -20px;
+      
+   }
+  
+   .mid ul li:hover .jobchild ul{
+  
+       display:inline-block;
+     margin-left: -45px;
+       line-height: 25px;
+       margin-top: 25px;
+       margin-bottom: -50px;
+   }
+   .mid ul li:hover .jobchild ul li{
+      
+       display: block;
+       position: relative;
+       margin-top: -125px;
+       text-decoration: none;
+       
+       
+   }
+
+   .right{
+           
+           width: 280px; 
+           height: 85px;
+           margin-left: 80px;
+           background-color: white;
         
-        #right>div:nth-child(1){
-           font-size: 30px;
+       }
+       
+       .right ul{
+
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+           color: gray;
+           font-size: 16px;
+           margin-top: 25px;
+           list-style: none;
+   }
+   .right ul li{
+     
            height: 100%;
            padding-left: 10px;
-            padding-right: 10px;
-           display: flex;
-           align-items: center;
-        }
-        #right>div:nth-child(1):hover{
-            cursor: pointer;
-            background-color: rgb(229, 228, 228);
-        }
+           padding-right: 10px;
+           padding-top: -30px;
+           margin-bottom: 30px;
+           font-size: 16px;
+           font-family: Roboto sans-serif;
+           
+         
+   } 
+   .right ul li a{
+   
+       text-decoration: none;
+       color:grey;
+
+   }
+ 
+   .right ul li:hover{
+       
+       background-color: rgb(229, 228, 228);
+       color: blue;
+       text-decoration-line: underline;
+       text-decoration-color: blue;
+       cursor: pointer;
+       font-weight: bold;
+       text-decoration-thickness: 4px;
+ 
+       
+   }
+   .right ul li:hover{
+       background-color: rgb(229, 228, 228);
+     padding-top: 30px;
+     padding-bottom: 30px;
+     margin-top: -35px;
+   }
+   .right ul li:hover:last-child{
+       margin-top: -30px;
+       padding-bottom: 40px;
+   }
+   .right ul li:hover:last-child ul{
+      margin-left: 20px;
+   }
+  .rightchild{
+       display: none;
+      
+   } 
+  
+   .right ul li:hover .rightchild{
+       display: block;
+       float:left;
+       position:absolute;
+       background-color: rgb(229, 228, 228);
+       width:auto;
+       height: auto;
+       padding: 15px;
+       margin-top: 40px;
+       margin-left: -270px;
+     
+      
+   }
+  
+   .right ul li:hover .rightchild ul{
+  
+       display:inline-block;
+       
+       margin-left: -45px;
+       line-height: 25px;
+       margin-top: 25px;
+       margin-bottom: -100px;
+   }
+
+ 
+   .right ul li:hover .rightchild ul:first-child{
+       margin-left: 50px;
+      
+   }
+
+   .right ul li:hover .rightchild ul li{
+      
+       display: block;
+       position: relative;
+       margin-top: -25px;
+       text-decoration: none;
+       
+       
+   } 
+  
+   .fa-bell{
+       font-size: 40px;
+   }
+
+
+       
+      
+      
 
         #bgimage{
-            width: 101%;
+            width: 100%;
+           margin-left: 0;
             height: 350px;
-            margin-top: 85px;
-           margin-left: -8px;
-            background-image:url(https://i.pinimg.com/originals/c8/67/3a/c8673ad4c46ade00cf3bd0049db62b16.jpg);
-            position: absolute;
+            margin-top:85px;
+            
+        }
+        #bg>img{
+            width: 100%;
+            height:350px;
+            /* position: absolute; */
+        }
+        #displayed{
+            position: relative;
+            margin-top: -360px;
         }
         #searchbar{
-            width: 780px;
+            width: 750px;
             height: 55px;
             margin-left: 250px;
+            border: 1px solid ;
             display: flex;
             align-items: center;
             margin-top: -10px;
@@ -119,7 +280,7 @@
         }
         #query{
             width: 670px;
-            height: 100%;
+            height: 94%;
             
           
         }
@@ -136,63 +297,161 @@
         #homedatas{
             width: 100%;
             height: auto;
-            margin-top: 200px;
+            margin-top: 170px;
             padding-bottom: 50px;
             background-color: rgb(244, 237, 237);
             display: flex;
         }
+
         #leftcard{
            width: 800px;
            height: auto;
-           border: 1px solid red;
            margin-left: 230px;
+        }
+        /* dropdown menu for main div */
+        
+       
+  
+        #rating{
+            width: 100%;
+           height: 250px;
+           margin-top: 60px;
+           padding-bottom: 20px;
+           background-color: white;
+           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #rating>img{
+            width: 120px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        #rating>h3{
+            margin-left: 20px;
+            font-family: Roboto,sans-serif;
+        }
+        #rating>p{
+            margin-left: 30px;
+            font-size: 18px;
+            font-family: Roboto,sans-serif;
+        }
+        #rating>button{
+            padding: 15px 25px 15px 25px;
+            margin-top: -80px;
+            margin-left: 570px;
+            font-size: 18px;
+            color: white;
+            background-color: rgb(33, 138, 212);
+            border: 0px;
+            
         }
        #recomended{
            width: 100%;
            height: 350px;
            margin-top: -10px;
-           border: 1px solid red;
            background-color: white;
            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
        }
        h1{
-           color: gray;
+           color: rgb(100, 98, 98);
            font-family: Roboto,sans-serif;
            margin-top: 10px;
        }
        h3{
         font-family: Roboto,sans-serif;
+        padding-top: 20px;
+        padding-left: 20px;
+      
        }
        #newalerts{
         width: 100%;
            height: 550px;
            margin-top: 30px;
-           border: 1px solid red;
            background-color: white;
            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
        }
        #application{
         width: 100%;
-           height: 300px;
+           height: 270px;
            margin-top: 30px;
-           border: 1px solid red;
-           background-color: white;
+           display: flex;
+           justify-content:space-between;
+       }
+       #application>div{
+         width: 48%;
+         height: 100%;
+         background-color: white;
            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
        }
+       #leftapp>h3{
+          padding-top: 20px;
+            margin-left: 20px;
+        }
+        #leftapp>hr{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        #leftapp>p{
+            margin-top: 30px;
+            font-size: 17px;
+            font-family:Roboto,sans-serif;
+            margin-left: 30px;
+        }
+
+        #rightapp>h3{
+          padding-top: 20px;
+            margin-left: 20px;
+        }
+        #rightapp>hr{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        #rightapp>p{
+            margin-top: 30px;
+            font-size: 18px;
+            font-family:Roboto,sans-serif;
+            margin-left: 30px;
+        }
+        #rightapp>p+h3{
+            
+            margin-top: 80px;
+            margin-left: 250px;
+            color: rgb(81, 81, 234);
+            font-family:Roboto,sans-serif;
+        }
+
        #recruiters{
         width: 100%;
-           height: 250px;
+           height: 220px;
            margin-top: 10px;
-           border: 1px solid red;
            background-color: white;
            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
        }
+       #recruiters>h3{
+          padding-top: 25px;
+            margin-left: 20px;
+        }
+       #recruiters>p{
+           font-size: 18px;
+           width: 350px;
+           margin: auto;
+           text-align: center;
+           font-family:Roboto,sans-serif;
+       }
+       #recruiters>hr{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        #rec{
+            margin-bottom: 10px;
+        }
         #leftcard>h2{
             font-size: 30px;
             margin-top: -10px;
             margin-left: 2px;
-            color: rgb(193, 187, 187);
+            color: rgb(100, 98, 98);
         }
+
+       
         #leftcard>h2:nth-child(1){
             margin-top: -30px; 
         }
@@ -204,20 +463,69 @@
            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
         #connections>h3{
-          margin-top: 20px;
+          padding-top: 20px;
             margin-left: 20px;
         }
         #connections>hr{
-            margin-top: 50px;
+            margin-top: 10px;
+            margin-bottom: 20px;
         }
+
+        #left_connection{
+            margin-left: 40px;
+            display: flex;
+
+        }
+        #left_connection>div>p{
+            line-height: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+            font-family:Roboto,sans-serif;
+        }
+        #left_connection>div>h1{
+            font-size: 50px;
+            color: rgb(33, 32, 32);
+            font-family:Roboto,sans-serif;
+            margin-bottom: -10px;
+        }
+
+        #connection_lower{
+            
+            display: flex;
+        }
+
+        #right_connection>p{
+            width: 500px;
+            font-family:Roboto,sans-serif;
+            font-size: 18px;
+            margin-left: 70px;
+        }
+        #right_connection>button{
+            padding: 15px 30px 15px 30px;
+            margin-top: 10px;
+            margin-left: 70px;
+            font-size: 20px;
+            color: white;
+            background-color: rgb(33, 138, 212);
+            border: 0px;
+        }
+        #right_connection>h3{
+            text-align: end;
+            color: rgb(81, 81, 234);
+        }
+
+       
+      
 
        #footer{
            width: 100%;
            height: auto;
+           padding-bottom: 20px;
        }
+       
        #footer1{
            width: 100%;
-           height: 650px;
+           height: 700px;
            background-color: rgb(46, 44, 44);
            
           
@@ -246,6 +554,7 @@
            font-family:Roboto,sans-serif;
            font-size: 20px;
            margin-top: 5px;
+           margin-left: -20px;
        }
        #foot1>p,#foot2>p,#foot3>p,#foot4>p{
         color: rgb(169, 164, 164);
@@ -256,15 +565,51 @@
        #foot4>img{
            margin-top: -10px;
            width: 40px;
+           margin-bottom: 20px;
        }
        #foot4{
            margin-left: 40px;
        }
        #footer2{
            width: 100%;
-           height: 150px;
-           border: 1px solid red;
+         height: 100px;
+         display: flex;
+         align-items: center;
        }
+       #footer2>h2{
+           width: 200px;
+           margin-left:280px;
+           color: black;
+           margin-top: -20px;
+           margin-right: -20px;
+       }
+       #motionfooter{
+          width: 50%;
+          margin-left:10px;
+          height: 100px;
+          border: 1px solid red;
+       }
+
+       #motionimg{
+           height: 100%;
+           width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   #motionimg>div{
+       width: 200px;
+       height: 100px;
+       border: 1px solid green;
+   }
+   #motionimg>div>img{
+       width: 100%;
+       height: 100%;
+   }
+   marquee{
+    motion-path: fill-box;
+   }
+
        #footer3{
         width: 100%;
            height: 50px;
@@ -274,7 +619,7 @@
            font-family: Roboto,sans-serif;
            color: rgb(82, 81, 81);
        }
-       .carousel-inner{
+       /* .carousel-inner{
            margin: auto;
            width: 70%;
            display: flex;
@@ -287,13 +632,12 @@
        .carousel-item>img{
           width: 100%;
           height: 100%;
-       }
+       } */
        #profileinfo{
           width: 400px;
           height: 500px;
-          border: 1px solid red;
           margin-left: 30px;
-          margin-top: -260px;
+          margin-top: -230px;
           background-color: white;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           position: absolute;
@@ -301,9 +645,8 @@
        #barcode{
         width: 400px;
           height: 230px;
-          border: 1px solid red;
           margin-left: 30px;
-          margin-top: 280px;
+          margin-top: 320px;
           background-color: white;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           display: flex;
@@ -311,37 +654,16 @@
        #service{
         width: 400px;
           height: 500px;
-          border: 1px solid red;
           margin-left: 30px;
           margin-top: 40px;
           background-color: white;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
        }
-       #faq{
-        width: 400px;
-          height: 150px;
-          border: 1px solid red;
-          margin-left: 30px;
-          margin-top: 40px;
-          background-color: white;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
-       }
-      #faq>h3{
-          margin-top: 30px;
-          margin-bottom: 10px;
-          margin-left: 20px;
-      }
-      #faq>p{
-        font-family: Roboto,sans-serif;
-        font-size: 18px;
-        margin-left: 20px;
-
-      }
-      #service{
+       #service{
           width: 362px;
           padding: 20px;
           padding-top: 40px;
-          
+          padding-bottom: 20px;
           font-family: Roboto,sans-serif;
       
 
@@ -371,13 +693,33 @@
     .knowmore{
       text-align: end;
       color: blue;
+      margin-top: -40px;
 
     }
    
+       #faq{
+        width: 400px;
+          height: 150px;
+          margin-left: 30px;
+          margin-top: 40px;
+          background-color: white;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+       }
+      #faq>h3{
+          margin-top: 30px;
+          margin-bottom: 10px;
+          margin-left: 20px;
+      }
+      #faq>p{
+        font-family: Roboto,sans-serif;
+        font-size: 18px;
+        margin-left: 20px;
+
+      }
+     
     #leftbar{
         width: 200px;
         height: 100%;
-        border: 1px solid red;
         font-family: Roboto,sans-serif;
     }
     #leftbar>h3{
@@ -410,41 +752,86 @@
         margin-top: 10px;
         color: rgb(66, 64, 64);
     }
+   
+  
+  
+
+  
+
       
     </style>
 </head>
 <body>
-    <div id="navbar">
-        
-    </div>
+    <div id="navbar"></div>
+
     <div id="bgimage">
+        <div id="bg"><img src="https://i.pinimg.com/originals/c8/67/3a/c8673ad4c46ade00cf3bd0049db62b16.jpg" alt=""></div>
+    </div>
+    <div id="displayed">
         <h2>Search Jobs</h2>
         <div id="searchbar">
             <input type="text" placeholder="Search Jobs" id="query">
             <button id="searchbtn" onclick="search()">SEARCH</button>
         </div>
-        
+    </div>
         <div id="homedatas">
           <div id="leftcard">
-             
+             <div id="rating">
+                 <img src="https://static.naukimg.com/s/0/0/i/ambition_box.png" alt="">
+                 <h3>Rate & Help your company win AmbitionBox Best Places to Work in India 2022 Award!</h3>
+                 <p>Your opinion matters!</p>
+                 <button>Rate your Company</button>
+             </div>
              <h2>Jobs</h2>
              <div id="recomended">
                 <h3>Recommended Job</h3>
                 <hr>
              </div>
              <div id="newalerts">
-
+            
              </div>
              <div id="application">
-
+                <div id="leftapp">
+                    <h3>New Recruiter Messages</h3>
+                <hr>
+                <p>You have applied for 1 JOB(s) in last 30 days</p>
+                <p>Daily Limit of Application: 50</p>
+                </div>
+                <div id="rightapp">
+                    <h3>New Recruiter Messages</h3>
+                <hr>
+                <p>You have 0 saved job(s) till now.</p>
+                <h3>VIEW ALL</h3>
+                </div>
              </div>
-             <h2>Recruiters</h2>
+             <h2 id="rec">Recruiters</h2>
              <div id="recruiters">
-
+                <h3>New Recruiter Messages</h3>
+                <hr>
+                <p>You do not have any unread message. Messages received from different recruiters will appear in this section.</p>
              </div>
              <div id="connections">
                 <h3>Recruiter Connections</h3>
                 <hr>
+                <div id="connection_lower">
+                    <div id="left_connection">
+                        <div>
+                            <h1>00</h1>
+                            <h1>00</h1>
+                        </div>
+                        <div>
+                          <p>Credits</p>
+                          <p>Purchased</p>
+                          <p>Credit</p>
+                          <p>Remaining</p>
+                        </div>
+                    </div>
+                    <div id="right_connection">
+                        <p>Buy recruiter connections credits to contact more recruiters hiring in your domain.</p>
+                        <button>BUY CREDITS</button>
+                        <h3>VIEW ALL</h3>
+                    </div>
+                </div>
              </div>
           </div>
           <div id="rightcard">
@@ -572,83 +959,40 @@
                
             </div>
             <div id="footer2">
-                
-                <!-- <div id="heroCarousel" class="carousel slide my-12 mx-12" data-bs-ride="carousel">
-                    <ol class="carousel-indicators">
-    
-                    </ol>
-                    <div class="carousel-inner">
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="https://cdn.newsnationtv.com/resize/460_-/images/2020/09/11/zomato-96.jpg" class="d-block w-100" alt="...">
-                              </div>
-
-                              <div class="carousel-item">
-                                <img src="https://ask2human.com/wp-content/uploads/2020/06/Meritnation-Customer-Care-1170x400.jpg" class="d-block w-100" alt="...">
-                              </div>
-
-                              <div class="carousel-item">
-                                <img src="https://image4.owler.com/logo/mydala_owler_20160226_214954_original.png" class="d-block w-100" alt="...">
-                              </div>
-
-                              <div class="carousel-item">
-                                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-sneufhma344t4ukj6c74he4pc0-20180925164322.Medi.jpeg" alt="...">
-                              </div>
-
-                              <div class="carousel-item">
-                                <img src="https://customercarecontacts.com/wp-content/uploads/2018/01/99acres-logo.jpg" alt="...">
-                              </div>
-
-                              <div class="carousel-item">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd4iayENWlzy8U6WbnhlDrdfCRu8jfR0jsgABR4-3ASLeFqcvV1b97pKJY3OJdI-K0_B8&usqp=CAU" alt="...">
-                              </div>
-
-                              <div class="carousel-item">
-                                <img src="http://simplycareer.com/wp-content/uploads/2015/10/naukrigulf-425x215.png" alt="...">
-                              </div>
-
-                              <div class="carousel-item">
-                                <img src="https://www.mpgi.edu.in/images/naukri-logo.png" alt="...">
-                              </div>
-
-                              <div class="carousel-item">
-                                <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/h6oclq7lq9rqqb0hze3d" alt="...">
-                              </div>
-
-                              <div class="carousel-item">
-                                <img src="https://www.zricks.com/UserImg/b3b8fd34-016c-45bf-8c13-ab708cc12e16.jpg" alt="...">
-                              </div>
-
-                              <div class="carousel-item">
-                                <img src="https://images.shiksha.ws/public/images/shareThumbnail.jpg" alt="...">
-                              </div>
-
-                              <div class="carousel-item">
-                                <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2018-06/26/full/1530007716-0302.jpg" alt="...">
-                              </div>
-
+                    <h2>Partner Sites</h2>
+                    <div id="motionfooter">
+                        <marquee behavior="" direction="">
+                            <div id="motionimg">
+                                <div><img src="https://cdn.newsnationtv.com/resize/460_-/images/2020/09/11/zomato-96.jpg" alt="zomato"></div>
+                                <div><img src="https://ask2human.com/wp-content/uploads/2020/06/Meritnation-Customer-Care-1170x400.jpg" alt="meritnation"></div>
+                                <div><img src="https://image4.owler.com/logo/mydala_owler_20160226_214954_original.png" alt="mydala"></div>
+                                <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-sneufhma344t4ukj6c74he4pc0-20180925164322.Medi.jpeg" alt="paisabazzar"></div>
+                                <div><img src="https://customercarecontacts.com/wp-content/uploads/2018/01/99acres-logo.jpg" alt="99acres"></div>
+                                <div><img src="https://www.medianews4u.com/wp-content/uploads/2019/08/Jeevansathi.jpg" alt="jeevansathi"></div>
+                                <div><img src="https://customercarecontacts.com/wp-content/uploads/2018/06/naukrigulf-logo.jpg" alt="naukrigulf"></div>
+                                <div><img src="http://w10.naukri.com/mailers/tips_04may10/gifs/logo.gif" alt="firstnaukri"></div>
+                                <div><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/h6oclq7lq9rqqb0hze3d" alt="brijj"></div>
+                            
+                            <div><img src="https://media-exp1.licdn.com/dms/image/C4E0BAQFTbt5HmwY9HA/company-logo_200_200/0/1519904647162?e=2147483647&v=beta&t=9QA6FHaba1P_17gG7NrtA0KW3pSqLWxKpvtAADtL1Sc" alt="allcheckdeal"></div>
+                            <div><img src="https://images.shiksha.ws/public/images/shareThumbnail.jpg" alt="siksha"></div>
+                            <div><img src="https://m.economictimes.com/thumb/msid-77048166,width-1200,height-900,resizemode-4,imgsize-72290/policybazaar.jpg" alt="policybazzar"></div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden"><i class="fa-solid fa-angle-left"></i></span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden"><i class="fa-solid fa-angle-right"></i></span>
-                            </button>
-                          </div>
+                        </marquee>
+                    
                     </div>
-                </div> -->
+                
+                   
             </div>
             <div id="footer3">
                 <p>All rights reserved @ 2022 Info Edge (India) Ltd.</p>
             </div>
         </div>
-    </div>
+   
 
+    
 
-
+    
+   
 </body>
 </html>
 <script type="module">
@@ -656,37 +1000,7 @@
 
     document.getElementById("navbar").innerHTML=navbar();
 
-//     var carouselImages = [
-//     "https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/2476.png?1651539391",
-//     "https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/2477.png?1651539464",
-//     "https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/2478.png?1651539527",
-//     "https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/2482.png?1651539592",
-//     "https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/2166.png?1651056728"
-// ];
-
-// carousel = document.querySelector('#heroCarousel');
-// carouselIndicators = document.querySelector('.carousel-indicators');
-// carouselInner = document.querySelector('.carousel-inner');
-
-// carouselImages.forEach(function(el,index){
-//     carouselItem = document.createElement('div');
-//     li = document.createElement('li');
-//     li.setAttribute('data-bs-target','#heroCarousel');
-//     li.setAttribute('data-bs-slide-to',index.toString());
-
-//     carouselItem.setAttribute('class','carousel-item');
-//     if(index==0) {
-//         carouselItem.setAttribute('class','carousel-item active');
-//         li.setAttribute('class','active');
-//     }
-//     img = document.createElement('img');
-//     img.setAttribute('src',el);
-//     img.setAttribute('class','d-block w-100');
-//     carouselItem.append(img);
-//     carouselIndicators.append(li);
-//     carouselInner.append(carouselItem);
-// })
 
 
 
-</script>
+ </script>
