@@ -1,0 +1,154 @@
+#navbar_login{
+    display:flex;
+    
+    justify-content: space-between;
+    height:50px;
+    width:1200px;
+    margin:auto
+
+}
+#login{
+    
+    width:300px;
+    font-size: 18px;
+    
+    word-spacing: 3px;
+}
+a{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+ #in{
+margin-top:15px;
+margin-right: 10px;
+} 
+
+#small{
+    display: flex;
+    width:250px;
+    
+    ;
+    
+}
+#bigbox{
+    
+    display: flex;
+    justify-content: space-around;
+}
+#work_content{
+    display:flex;
+}
+#work_content>div{
+    width:250px;
+    border: 1px solid black;
+    line-height: 15px;
+    margin-right: 20px;
+    text-align: center;
+}
+#work_content>div>div>h3{
+    color:rgb(35, 139, 180);
+    margin-bottom:-10px
+}
+#side_portion{
+
+    height:300px;
+    
+    
+}
+#content{
+    margin-top: 80px;
+    width:250px;
+    height:300px;
+    padding:20px 10px 10px 30px;
+    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    
+    
+}
+
+#img_box{
+    top:0;
+    margin-top: 80px;
+    margin-left: 80px;
+
+position: fixed;
+      }
+      input{
+        width:500px;
+        height:30px;
+        border: 1px solid grey;
+      }
+      #input_box{
+        color:rgb(134, 117, 117);
+        font-size: bold;
+      }
+      h1{
+        color:black
+      }
+      ::placeholder{
+        font-size: 18px;
+      }
+      #info{
+        margin-bottom: 50px;
+        line-height:0%;
+      }
+      #big_work>h4{
+        margin-bottom: 2px;
+        
+      }
+      
+    .styleClass{
+        background-color:orangered;
+        width:210px;
+        height:32px;
+        border-radius: 20px;
+        border:2px solid white
+      }
+      #city{
+        
+          margin-top: 40px;
+          line-height: 0%;
+        
+      }
+      #resume{
+        margin-top: 40px;
+        line-height: 0%;
+      }
+      #button1{
+        width:400px;
+        border:1px solid grey;
+        border-radius: 20px;
+        color:grey;
+
+        display: flex;
+      }
+      #box{
+        width:20px;
+        color: orangered;
+        margin-top: 10px;
+        margin-right: 10px ;
+      }
+      #check{
+        display: flex;
+
+      }
+      #register{
+        background-color: #457eff;
+        width:150px;
+        height:40px;
+        color:white;
+        font-size: 16px;
+        border-radius: 25px;
+        border:1px solid white;
+    
+      }
+      #hnji{
+        display: flex;
+        
+        border-radius: 10px;
+      }
+      #brief{
+        margin-top: 30px;
+        margin-left: 10px;
+      }

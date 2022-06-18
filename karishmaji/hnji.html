@@ -1,0 +1,71 @@
+<div id="big">
+    <div>
+    <div id="profile_box">
+        <div id="display">
+        <img src="https://media.istockphoto.com/photos/businessman-silhouette-as-avatar-or-default-profile-picture-picture-id476085198?b=1&k=20&m=476085198&s=170667a&w=0&h=Ct4e1kIOdCOrEgvsQg4A1qeuQv944pPFORUQcaGw4oI=" alt="">
+            
+        </div>
+        <div id="name_box"></div>
+    </div>
+<div id="boxji">
+<div id="box1">
+  
+    <img src="https://cdn-icons.flaticon.com/png/128/3425/premium/3425077.png?token=exp=1655480419~hmac=602a6a7ff30d6d209abe9397820b0ebb" alt="">
+    <img src="https://cdn-icons-png.flaticon.com/128/1243/1243560.png" alt="">
+    <img src="https://cdn-icons-png.flaticon.com/128/1656/1656850.png" alt="">
+  
+   </div>
+
+   <div id="box2"></div>
+   <div id="box3"></div>
+   <div id="box4"><img src="https://cdn-icons-png.flaticon.com/128/709/709605.png" alt="">
+<img src="https://cdn-icons-png.flaticon.com/128/709/709605.png" alt=""></div>
+
+</div>
+</div>
+<div id="bucket">
+    <h3>Pending Action</h3>
+  <p> Add Profile Summary</p> 
+  <p> Add Language </p>
+    <p>Add Resume Headlines</p>
+</div>
+
+
+   </div>
+
+
+
+<---------------------------js part------------------------------------->
+    function append(dataji){
+    var hmm=document.getElementById("box2")
+
+    var hnji=document.getElementById("box3")
+    var dataji=JSON.parse(localStorage.getItem("register"))
+    console.log(dataji)
+    var name=  document.createElement("h3");
+    name.innerText=dataji.name
+  var ji=document.getElementById("name_box")
+  ji.innerHTML=" "
+  ji.append(name)
+  
+  var address=document.createElement("p")
+  address.innerText=dataji.city
+  var exp=document.createElement("p")
+  exp.innerText="Fresher";
+  var jiki=document.createElement("p")
+  jiki.innerText="Add availability to join"
+  var email=document.createElement("p")
+  email.innerText=dataji.email;
+  var mobile=document.createElement("p")
+  mobile.innerText=dataji.mobile;
+  
+  
+  hmm.append(address,exp,jiki)
+  
+  hnji.append(mobile,email)
+  
+  }
+   append(dataji)
+  
+  
+  
