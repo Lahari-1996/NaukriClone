@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/dcc502fc2e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href=".\style\style.css">
+    <style>
+      *{
+    font-family:Roboto,sans-serif;;
+}
+        #bgimage{
+            width: 100%;
+           margin-left: 0;
+            height: 350px;
+            margin-top:85px;
+            
+        }
+        #bg>img{
+            width: 100%;
+            height:350px;
+            /* position: absolute; */
+        }
+        #displayed{
+            position: relative;
+            margin-top: -360px;
+        }
+        #searchbar{
+            width: 750px;
+            height: 55px;
+            margin-left: 250px;
+            border: 1px solid ;
+            display: flex;
+            align-items: center;
+            margin-top: -10px;
+        }
+        h2{
+            color: white;
+            font-family: Roboto,sans-serif;
+            margin-left: 250px;
+            padding-top: 40px;
+        
+        }
+        #query{
+            width: 670px;
+            height: 94%;
+            
+          
+        }
+        
+        #searchbtn{
+            width: 130px;
+            height: 107%;
+             font-size: 18px;
+            font-family:Roboto,sans-serif;
+            background-color: rgb(77, 77, 232);
+            border: 0px;
+            color: white;
+        }
+        #homedatas{
+            width: 100%;
+            height: auto;
+            margin-top: 170px;
+            padding-bottom: 50px;
+            background-color: rgb(244, 237, 237);
+            display: flex;
+        }
+
+        #leftcard{
+           width: 800px;
+           height: auto;
+           margin-left: 230px;
+        }
+        /* dropdown menu for main div */
+        
+       
+  
+        #rating{
+            width: 100%;
+           height: 250px;
+           margin-top: 60px;
+           padding-bottom: 20px;
+           background-color: white;
+           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #rating>img{
+            width: 120px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        #rating>h3{
+            margin-left: 20px;
+            font-family: Roboto,sans-serif;
+        }
+        #rating>p{
+            margin-left: 30px;
+            font-size: 18px;
+            font-family: Roboto,sans-serif;
+        }
+        #rating>button{
+            padding: 15px 25px 15px 25px;
+            margin-top: -80px;
+            margin-left: 570px;
+            font-size: 18px;
+            color: white;
+            background-color: rgb(33, 138, 212);
+            border: 0px;
+            
+        }
+        
+       #recomended{
+           width: 96%;
+           height: 360px;
+           padding: 15px;
+           margin-top: -10px;
+           background-color: white;
+           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       }
+     a{
+         text-decoration: none;
+     }
+       #recomended>div{
+           display: flex;
+           margin-top: -10px;
+           color: gray;
+       }
+       #recomended>div>p{
+           margin-left: 20px;
+       }
+       #recomended>div>p+p{
+           margin-left: 50px;
+       }
+       #recomended>h4{
+           margin-top: 10px;
+           color: black;
+           margin-left: 20px;
+       }
+       #recomended>p{
+           margin-top: -6px;
+           margin-left: 20px;
+           color: gray;
+       }
+       
+       #recomended>p+h3{
+        margin-top: -10px;
+        color: rgb(90, 90, 239);
+        text-align: end;
+       }
+       #newalerts{
+        width: 100%;
+           height: 350px;
+           margin-top: 30px;
+           background-color: white;
+           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       }
+
+       #newalert>div{
+           display: flex;
+           margin-top: -10px;
+           color: gray;
+       }
+       #newalert>div>p{
+           margin-left: 20px;
+       }
+       #newalert>div>p+p{
+           margin-left: 50px;
+       }
+       #newalert>h4{
+           margin-top: 10px;
+           color: black;
+           margin-left: 20px;
+       }
+       #newalert>p{
+           margin-top: -6px;
+           margin-left: 20px;
+           color: gray;
+       }
+       
+       #newalert>p+h3{
+        margin-top: -10px;
+        color: rgb(90, 90, 239);
+        text-align: end;
+        padding-right: 20px;
+       }
+
+
+       i{
+           margin-right: 10px;
+       }
+
+       h1{
+           color: rgb(100, 98, 98);
+           font-family: Roboto,sans-serif;
+           margin-top: 10px;
+       }
+       h3{
+        font-family: Roboto,sans-serif;
+        padding-top: 20px;
+        padding-left: 20px;
+      
+       }
+       .time{
+           text-align: end;
+           padding-right: 10px;
+       }
+       
+       #application{
+        width: 100%;
+           height: 270px;
+           margin-top: 30px;
+           display: flex;
+           justify-content:space-between;
+       }
+       #application>div{
+         width: 48%;
+         height: 100%;
+         background-color: white;
+           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       }
+       #leftapp>h3{
+          padding-top: 20px;
+            margin-left: 20px;
+        }
+        #leftapp>hr{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        #leftapp>p{
+            margin-top: 30px;
+            font-size: 17px;
+            font-family:Roboto,sans-serif;
+            margin-left: 30px;
+        }
+
+        #rightapp>h3{
+          padding-top: 20px;
+            margin-left: 20px;
+        }
+        #rightapp>hr{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        #rightapp>p{
+            margin-top: 30px;
+            font-size: 18px;
+            font-family:Roboto,sans-serif;
+            margin-left: 30px;
+        }
+        #rightapp>p+h3{
+            
+            margin-top: 80px;
+            margin-left: 250px;
+            color: rgb(81, 81, 234);
+            font-family:Roboto,sans-serif;
+        }
+
+       #recruiters{
+        width: 100%;
+           height: 220px;
+           margin-top: 10px;
+           background-color: white;
+           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       }
+       #recruiters>h3{
+          padding-top: 25px;
+            margin-left: 20px;
+        }
+       #recruiters>p{
+           font-size: 18px;
+           width: 350px;
+           margin: auto;
+           text-align: center;
+           font-family:Roboto,sans-serif;
+       }
+       #recruiters>hr{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        #rec{
+            margin-bottom: 10px;
+        }
+        #leftcard>h2{
+            font-size: 30px;
+            margin-top: -10px;
+            margin-left: 2px;
+            color: rgb(100, 98, 98);
+        }
+
+       
+        #leftcard>h2:nth-child(1){
+            margin-top: -30px; 
+        }
+        #connections{
+            width: 100%;
+           height: 300px;
+           margin-top: 30px;
+           background-color: white;
+           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #connections>h3{
+          padding-top: 20px;
+            margin-left: 20px;
+        }
+        #connections>hr{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        #left_connection{
+            margin-left: 40px;
+            display: flex;
+
+        }
+        #left_connection>div>p{
+            line-height: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+            font-family:Roboto,sans-serif;
+        }
+        #left_connection>div>h1{
+            font-size: 50px;
+            color: rgb(33, 32, 32);
+            font-family:Roboto,sans-serif;
+            margin-bottom: -10px;
+        }
+
+        #connection_lower{
+            
+            display: flex;
+        }
+
+        #right_connection>p{
+            width: 500px;
+            font-family:Roboto,sans-serif;
+            font-size: 18px;
+            margin-left: 70px;
+        }
+        #right_connection>button{
+            padding: 15px 30px 15px 30px;
+            margin-top: 10px;
+            margin-left: 70px;
+            font-size: 20px;
+            color: white;
+            background-color: rgb(33, 138, 212);
+            border: 0px;
+        }
+        #right_connection>h3{
+            text-align: end;
+            color: rgb(81, 81, 234);
+        }
+
+       
+      
+
+      
+       /* .carousel-inner{
+           margin: auto;
+           width: 70%;
+           display: flex;
+           overflow:hidden;
+       }
+       .carousel-item{
+           width: 100px;
+           height: 50px;
+       }
+       .carousel-item>img{
+          width: 100%;
+          height: 100%;
+       } */
+       #profileinfo{
+          width: 400px;
+          height: 500px;
+          margin-left: 30px;
+          margin-top: -230px;
+          background-color: white;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          position: absolute;
+       }
+       #barcode{
+        width: 400px;
+          height: 230px;
+          margin-left: 30px;
+          margin-top: 320px;
+          background-color: white;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          display: flex;
+       }
+       #service{
+        width: 400px;
+          height: 500px;
+          margin-left: 30px;
+          margin-top: 40px;
+          background-color: white;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       }
+       #service{
+          width: 362px;
+          padding: 20px;
+          padding-top: 40px;
+          padding-bottom: 20px;
+          font-family: Roboto,sans-serif;
+      
+
+      }
+      #service>h3{
+        width:340px;
+        margin-right: 0px;
+        font-family: Roboto,sans-serif;
+      }
+      #service>h3:nth-child(4){
+         text-align: right;
+          color: rgb(81, 81, 224);
+      }
+      #service>h4{
+        font-size: 20px; 
+        width:340px;
+        font-family: Roboto,sans-serif;
+
+        }
+    #service>p{
+         font-size: 17px; 
+         width:340px;
+         color: rgb(66, 64, 64);
+         font-family: Roboto,sans-serif;
+         
+    }
+    .knowmore{
+      text-align: end;
+      color: blue;
+      margin-top: -40px;
+
+    }
+   
+       #faq{
+        width: 400px;
+          height: 150px;
+          margin-left: 30px;
+          margin-top: 40px;
+          background-color: white;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+       }
+      #faq>h3{
+          margin-top: 30px;
+          margin-bottom: 10px;
+          margin-left: 20px;
+      }
+      #faq>p{
+        font-family: Roboto,sans-serif;
+        font-size: 18px;
+        margin-left: 20px;
+
+      }
+     
+    #leftbar{
+        width: 200px;
+        height: 100%;
+        font-family: Roboto,sans-serif;
+    }
+    #leftbar>h3{
+        width: 180px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    #leftbar>div{
+        display: flex;
+    }
+    #leftbar>div>p{
+        margin-left: 20px;
+        font-size: 18px;
+        color: rgb(66, 64, 64);
+    }
+    #leftbar>div>img{
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+        margin-top: 18px;
+    }
+    #rightbar>img{
+        width: 120px;
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    #rightbar>p{
+        font-size: 18px;
+        margin-left: 40px;
+        margin-top: 10px;
+        color: rgb(66, 64, 64);
+    }
+   
+  
+  
+
+  
+
+      
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div id="bgimage">
+        <div id="bg"><img src="https://i.pinimg.com/originals/c8/67/3a/c8673ad4c46ade00cf3bd0049db62b16.jpg" alt=""></div>
+    </div>
+    <div id="displayed">
+        <h2>Search Jobs</h2>
+        <div id="searchbar">
+            <input type="text" placeholder="Search Jobs" id="query">
+            <button id="searchbtn">SEARCH</button>
+        </div>
+    </div>
+        <div id="homedatas">
+          <div id="leftcard">
+             <div id="rating">
+                 <img src="https://static.naukimg.com/s/0/0/i/ambition_box.png" alt="">
+                 <h3>Rate & Help your company win AmbitionBox Best Places to Work in India 2022 Award!</h3>
+                 <p>Your opinion matters!</p>
+                 <button>Rate your Company</button>
+             </div>
+             <h2>Jobs</h2>
+             <a href="recomendedjob.html">
+              <div id="recomended">
+                <h3>Recommended Job</h3>
+                <hr>
+                <h4>Inventor Designer</h4>
+                <p>Pennar Industries Limited</p>
+                <div>
+                    <p><i class="fa-solid fa-briefcase"></i>3-6 Years</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Hyderabad/Srcunderabad</p>
+                </div>
+                <p>3D,CAD,Autodesk</p>
+                <p>Strong Mechanical CAD design experience of Sheet metal,structural and 3D modeling using A...</p>
+                <p class="time">Posted 5 days ago</p>
+                <p>Not Disclosed</p>
+                <h3>VIEW ALL</h3>
+             </div>
+            </a>
+             <div id="newalerts">
+                <h3>New Jobs in My Job Alerts</h3>
+                <hr>
+                 <div id="newalert"><h4>BPO for Freshers</h4>
+                    <p>Universal Manpower Online</p>
+                    <div>
+                        <p><i class="fa-solid fa-briefcase"></i>1-5 Years</p>
+                        <p><i class="fa-solid fa-location-dot"></i>Bangalore/Bengaluru</p>
+                    </div>
+                    <p>BBA,BTech Fresher,BCA</p>
+                    <p>Customer care officer employment in on Phonepe Fresher payrole</p>
+                    <p class="time">Posted 3 days ago</p>
+                    <p>Not Disclosed</p>
+                    <h3>VIEW ALL</h3></div>
+                
+             </div>
+             <div id="application">
+                <div id="leftapp">
+                    <h3>New Recruiter Messages</h3>
+                <hr>
+                <p>You have applied for 1 JOB(s) in last 30 days</p>
+                <p>Daily Limit of Application: 50</p>
+                </div>
+                <div id="rightapp">
+                    <h3>New Recruiter Messages</h3>
+                <hr>
+                <p>You have 0 saved job(s) till now.</p>
+                <h3>VIEW ALL</h3>
+                </div>
+             </div>
+             <h2 id="rec">Recruiters</h2>
+             <div id="recruiters">
+                <h3>New Recruiter Messages</h3>
+                <hr>
+                <p>You do not have any unread message. Messages received from different recruiters will appear in this section.</p>
+             </div>
+             <div id="connections">
+                <h3>Recruiter Connections</h3>
+                <hr>
+                <div id="connection_lower">
+                    <div id="left_connection">
+                        <div>
+                            <h1>00</h1>
+                            <h1>00</h1>
+                        </div>
+                        <div>
+                          <p>Credits</p>
+                          <p>Purchased</p>
+                          <p>Credit</p>
+                          <p>Remaining</p>
+                        </div>
+                    </div>
+                    <div id="right_connection">
+                        <p>Buy recruiter connections credits to contact more recruiters hiring in your domain.</p>
+                        <button>BUY CREDITS</button>
+                        <h3>VIEW ALL</h3>
+                    </div>
+                </div>
+             </div>
+          </div>
+          <div id="rightcard">
+             <div id="profileinfo">
+                 
+             </div>
+             <div id="barcode">
+                 <div id="leftbar">
+                     <h3>Get real-time job updates & instant notifications only on the app!</h3>
+                     <div>
+                         <p>Available on</p>
+                         <img src="https://static.naukimg.com/s/5/105/i/play-store.png" alt="">
+                         <img src="https://static.naukimg.com/s/5/105/i/app-store.png" alt="">
+                     </div>
+                 </div>
+                 <div id="rightbar">
+                     <img src="https://static.naukimg.com/s/5/105/i/qrcode.png" alt="">
+                     <p>Scan to download</p>
+                 </div>
+             </div>
+             <div id="service">
+                 <img src="https://static.naukimg.com/s/4/123/i/ffLogo.png" alt="">
+                 <h3>Naukri Services you might be interested in</h3>
+                 <h3>Be a Priority Applicant</h3>
+                 <p>Increase your chances of getting shortlisted for the applied jobs and receiving calls from recruiters.</p>
+                 <h3 class="knowmore">KNOW MORE</h3>
+                 <H4>Increase your visibility by upto 3 times</H4>
+                 <p>Get your profile marked as 'Featured' and get a higher rank when recruiters search for resumes</p>
+                 <h3 class="knowmore">KNOW MORE</h3>
+                 <p>Call 1800-572-5557 now! (Toll-free)</p>
+             </div>
+             <div id="faq">
+                 <h3>FAQ</h3>
+                 <hr>
+                 <p>Click here for frequently asked questions.</p>
+             </div>
+          </div>
+        </div>
+
+        <div id="footer">
+           
+        </div>
+   
+
+    
+
+    
+   
+</body>
+</html>
+<script type="module">
+    import {navbar,footer} from './script/navbar.js'
+
+    document.getElementById("navbar").innerHTML=navbar();
+    document.getElementById("footer").innerHTML=footer();
+
+    var data=[
+    {
+        "titeljob": "iOS Developer",
+        "company": "A1 Technology Pvt Ltd3",
+        "experience": "1-3 Yrs",
+        "salary": "Not disclosed",
+        "location": "Mumbai",
+        "description": "Should be open to working with a startup Company Proficient with Objective-C and Swift",
+        "skill1": "SWIFT",
+        "skill2": "iOS",
+        "skill3": "objective c",
+        "skill4": "Mobile objective",
+        "skill5": "maintenance",
+        "skill6": "objective ",
+        "daysago": "2 Days AGO"
+    },
+    {
+        "titeljob": ".NET Application Support Developer",
+        "company": "UST Blueconch",
+        "experience": "3-6 Yrs",
+        "salary": "10,00,000 - 20,00,000 PA.",
+        "location": "pune",
+        "description": "Job Description-We're looking for a Support & Maintenance Engineer who is a self-starte...",
+        "skill1": "c#",
+        "skill2": "Testing",
+        "skill3": "Software Development",
+        "skill4": "IT Skills",
+        "skill5": "asp",
+        "skill6": "Maintenance",
+        "daysago": "8 Days AGO"
+    },
+    {
+        "titeljob": "SAP PM Plant Maintenance Application Developer",
+        "company": "Accenture",
+        "experience": "6-8 Yrs",
+        "salary": "Not disclosed",
+        "location": "Hyderabad",
+        "description": "Educational Qualification : Graduate preferably from Engineering background Technical E...",
+        "skill1": "Business process",
+        "skill2": "SAP ",
+        "skill3": "Consulting",
+        "skill4": "CustomerService ",
+        "skill5": "enterprise asset management",
+        "skill6": " asset management",
+        "daysago": "15 Days AGO"
+    },
+    {
+        "titeljob": "Android Application Developer",
+        "company": "DIGITALFLAKE SOLUTIONS PRIVATE LIMITED",
+        "experience": "1-3 Yrs",
+        "salary": "Not disclosed",
+        "location": "Mumbai",
+        "description": "Cotlin, Core Android, Jetpack Libraries, Recycler view, Excellent debugging skill, exce...",
+        "skill1": "Rest Api Integration",
+        "skill2": "Android Application ",
+        "skill3": "Cotlin,",
+        "skill4": "REST API",
+        "skill5": "Unit testing",
+        "skill6": "C++",
+        "daysago": "FEW HOURS AGO"
+    },
+    {
+        "titeljob": "Mobile App Developer",
+        "company": "Thoughts2Binary Consulting and Solutions LLP",
+        "experience": "0-3 Yrs",
+        "salary": "Not disclosed",
+        "location": "pune",
+        "description": "We are looking for enthusiastic mobile App developers who can work on iOS / Android app...",
+        "skill1": "Angular",
+        "skill2": "JSON",
+        "skill3": "Ios Development",
+        "skill4": "React Native",
+        "skill5": "Eclipse",
+        "skill6": "IOS",
+        "daysago": "1 Days AGO"
+    },
+    {
+        "titeljob": "Mobile App Developer",
+        "company": "Customer Success Technology Pvt Ltd",
+        "experience": "1-5 Yrs",
+        "salary": "3,00,000 - 4,00,000 PA.",
+        "location": "Mumbai",
+        "description": "Good exposure to the design and development of the hybrid mobile app using Native, Ioni...",
+        "skill1": "flutter",
+        "skill2": "android",
+        "skill3": "Mobile Application Development ",
+        "skill4": "lonic Framework",
+        "skill5": "IOS",
+        "skill6": "React Native",
+        "daysago": "3 Days AGO"
+    },
+    {
+        "titeljob": "Mobile App Developer",
+        "company": "Shriasys",
+        "experience": "0-1 Yrs",
+        "salary": "Not disclosed",
+        "location": "New Delhi",
+        "description": "Only limited positions open apply as soon as possibleCandidate should be involved in cr...",
+        "skill1": "Android",
+        "skill2": "iOS",
+        "skill3": "User interface designing",
+        "skill4": "Architectural design",
+        "skill5": "appcelerator",
+        "skill6": "Communciation",
+        "daysago": "1 Days AGO"
+    },
+    {
+        "titeljob": "Flutter Mobile App Developer",
+        "company": "ANANDPUSHP TECHNOLOGIES PRIVATE LIMITED",
+        "experience": "1-3 Yrs",
+        "salary": "6,00,000 - 12,00,000 PA.",
+        "location": "Mumbai",
+        "description": "Excellent working experience in front-end / mobile frameworks and well versed with iOS ...",
+        "skill1": "Flutter",
+        "skill2": "SQLite",
+        "skill3": "RESTful APIs",
+        "skill4": "performance testing",
+        "skill5": "IT Skills ",
+        "skill6": "Testing",
+        "daysago": "1 Days AGO"
+    },
+    {
+        "titeljob": "Mobile App Developer",
+        "company": "Siemens4.2",
+        "experience": "2-6 Yrs",
+        "salary": "Not disclosed",
+        "location": "Mumbai",
+        "description": "You should be able to Write clean, well-designed code. You should be able to Carry out ...",
+        "skill1": "Web technologies",
+        "skill2": "html5",
+        "skill3": "Coding",
+        "skill4": "Siemens",
+        "skill5": "Manager Technology",
+        "skill6": "HTML",
+        "daysago": "3 Days AGO"
+    },
+    {
+        "titeljob": "Android App Developer",
+        "company": "LD EDUCARE PRIVATE LIMITED",
+        "experience": "1-3 Yrs",
+        "salary": "6,00,000 - 8,00,000 PA.",
+        "location": "New Delhi",
+        "description": "Proficient understanding of code versioning tools, such as Git Experience with offline ...",
+        "skill1": "ANDROID",
+        "skill2": "JAVA",
+        "skill3": "CSS",
+        "skill4": "MYSQL",
+        "skill5": "PHP",
+        "skill6": "Communciation",
+        "daysago": "1 Days AGO"
+    },
+    {
+        "titeljob": " Android App Developer",
+        "company": "Riddhi Management Services Pvt. Ltd",
+        "experience": "0-2 Yrs",
+        "salary": "1,25,000 - 3,50,000 PA.",
+        "location": "Mumbai",
+        "description": "Proficient understanding of code versioning tools, such as CVS, SVNMust have good knowl...",
+        "skill1": "Java",
+        "skill2": "Mobile Development",
+        "skill3": "SQL",
+        "skill4": "Data Structures",
+        "skill5": "maintenance",
+        "skill6": "Communciation",
+        "daysago": "1 Days AGO"
+    },
+    {
+        "titeljob": "Flutter Developer",
+        "company": "SecureO Intelligence",
+        "experience": "1-4 Yrs",
+        "salary": "Not disclosed",
+        "location": "Mumbai",
+        "description": "Required Knowledge & skills-Design and Build cross-platform mobile apps for Android& IO...",
+        "skill1": "ANDROID",
+        "skill2": "Java",
+        "skill3": "CSS",
+        "skill4": "MySQL",
+        "skill5": "CI",
+        "skill6": "PHP",
+        "daysago": "8 Days AGO"
+    },
+    {
+        "titeljob": "Android Mobile Application Developer",
+        "company": "AVANI INFOSOFT PRIVATE LIMITED",
+        "experience": "0-2 Yrs",
+        "salary": "3,00,000 - 8,00,000 PA.",
+        "location": "Mumbai",
+        "description": "Strong knowledge of Android SDK, different versions of Android, and how to deal with di...",
+        "skill1": "Fixing bugs",
+        "skill2": "Android SDK",
+        "skill3": "Android UI",
+        "skill4": "mplementing unit test",
+        "skill5": "Restjson",
+        "skill6": "Communciation",
+        "daysago": "3 Days AGO"
+    },
+
+    // Web Developer
+        {
+            "titeljob": "Web Designer and Web Developer",
+            "company": "RESOLVE ITECH CORP",
+            "experience": "0-2 Yrs",
+            "image": "",
+            "salary": "1,00,000 - 2,00,000 PA.",
+            "location": "Pollachi, Tirupur/Tiruppur, Coimbatore",
+            "description": "Design and build advanced applications IN Web development2.Collaborate with cross-fun...",
+            "skill1": "Javascript",
+            "skill2": "MySQL",
+            "skill3": "HTML",
+            "skill4": "Data Structures",
+            "skill5": "OOPS",
+            "skill6": "wordpresscode",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Full Stack Web Developer",
+            "company": "Shades of Web",
+            "experience": "0-3 Yrs",
+            "salary": "Not disclosed",
+            "location": "Mumbai",
+            "description": "We are open for Work from Home / Part time options as well for right candidatesYou shou...",
+            "skill1": "Javascript",
+            "skill2": "Communication Skills",
+            "skill3": "HTML",
+            "skill4": "Data Structures",
+            "skill5": "OOPS",
+            "skill6": "wordpresscode",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Web Developer",
+            "company": "Technosoft Engineering Projects Limited",
+            "experience": "1-2 Yrs",
+            "salary": "1,00,000 - 3,00,000 PA.",
+            "location": "Thane",
+            "description": "Role : Web Developer Education : Bsc Computer science/IT, BE(CS/IT) Experience : 1yrs. ...",
+            "skill1": "Wordpress",
+            "skill2": "Communication Skills",
+            "skill3": "HTML",
+            "skill4": "DevelopmentFrontEnd",
+            "skill5": "OOPS",
+            "skill6": "javascript",
+            "daysago": "1 Days AGO"
+        },
+        {
+            "titeljob": "Web Developer",
+            "company": "Radiansys Technologies Pvt Ltd",
+            "experience": "1-5 Yrs",
+            "salary": "2,00,000 - 6,00,000 PA.",
+            "location": "Gurgaon/Gurugram, Delhi / NCR",
+            "description": "Employment Type:Full Time, PermanentCandidates should have hands-on experience in the D...",
+            "skill1": "jQuery",
+            "skill2": "Javascript",
+            "skill3": "CSS",
+            "skill4": "HTML",
+            "skill5": "Angularjs",
+            "skill6": "Java",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Laravel Web Developer",
+            "company": "Cygner Technolabs Pvt. Ltd.",
+            "experience": "1-3 Yrs",
+            "salary": "1,00,000 - 4,50,000 PA.",
+            "location": "Rajkot",
+            "description": "Are you searching for a company that values your skills and motivates you for your pers...",
+            "skill1": "PHP",
+            "skill2": "React ",
+            "skill3": " js2 ",
+            "skill4": "AngularJS",
+            "skill5": "OOPS",
+            "skill6": "javascript",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Web Developer",
+            "company": "CR Group",
+            "experience": "0-1 Yr",
+            "salary": "Not disclosed",
+            "location": "Gurgaon/Gurugram, Delhi / NCR",
+            "description": "Roles and Responsibilities This is a training bootcamp with no upfront fees and an assu...",
+            "skill1": "Wordpress",
+            "skill2": "MySQL",
+            "skill3": "Algorithms",
+            "skill4": "Data Structures",
+            "skill5": "Angularjs",
+            "skill6": "Java",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Frontend Web Developer",
+            "company": "BM Coder",
+            "experience": "0-2 Yrs",
+            "salary": "50,000 - 2,50,000 PA.",
+            "location": "Gandhinagar, Ahmedabad, Rajkot",
+            "description": "Deep expertise and hands on experience with Web Applications and programming languages ...",
+            "skill1": "Html",
+            "skill2": "CssBootstrap",
+            "skill3": "Css ",
+            "skill4": "JQuery",
+            "skill5": "BootstrapXML2 ",
+            "skill6": "javascript",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Web Developer",
+            "company": "Infolative Technologies",
+            "experience": "1-2 Yrs",
+            "salary": "Not disclosed",
+            "location": "Ghaziabad, Delhi / NCR",
+            "description": "Bachelors degree in computer science or a similar fieldShould have basic / advanced kno...",
+            "skill1": "CSS",
+            "skill2": "Javascript",
+            "skill3": "PHP",
+            "skill4": "HTML",
+            "skill5": "JQuery",
+            "skill6": "wordpresscode",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Web Developer",
+            "company": "FTip infosol",
+            "experience": "1-2 Yrs",
+            "salary": "75,000 - 2,50,000 PA.",
+            "location": "Mumbai",
+            "description": "Work From Home if required Understanding and knowledge of web development and content s...",
+            "skill1": "Angular",
+            "skill2": "Javascript",
+            "skill3": "Algorithms",
+            "skill4": "JQuery",
+            "skill5": "OOPS",
+            "skill6": "Java",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Web Developer",
+            "company": "Futuretech Bizsoft LLP",
+            "experience": "0-2 Yrs",
+            "salary": "2,00,000 - 5,00,000 PA",
+            "location": "Navsari, Bardoli, Surat",
+            "description": "To be successful as an ASP.NET developer, you should demonstrate excellent problem-solv...",
+            "skill1": "Angular",
+            "skill2": "Javascript",
+            "skill3": "HTML",
+            "skill4": "JQuery",
+            "skill5": "OOPS",
+            "skill6": "C++",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Full Stack Web Developer",
+            "company": "OCTALOGIC TECH LLP",
+            "experience": "1-3 Yrs",
+            "salary": "Not disclosed",
+            "location": "pune",
+            "description": "The job will allow the candidate to work from home Must have a minimum of 1 year work e...",
+            "skill1": "Node.Js",
+            "skill2": "React.Js",
+            "skill3": "HTML",
+            "skill4": "ReduxReact js",
+            "skill5": "JQuery",
+            "skill6": "javascript",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Backend Web Developer",
+            "company": "Kal Informatics",
+            "experience": "0-3 Yrs",
+            "salary": "Not disclosed",
+            "location": "pune",
+            "description": "Excellent analytical and time management skills Teamwork skills with a problem-solving ...",
+            "skill1": "CSS",
+            "skill2": "React.Js",
+            "skill3": "Algorithms",
+            "skill4": "JQuery",
+            "skill5": "OOPS",
+            "skill6": "Java",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Full Stack Web Developer",
+            "company": "FINTECH INFOSYSTEMS PRIVATE LIMITED",
+            "experience": "0-2 Yrs",
+            "salary": "6,00,000 - 16,00,000 PA.",
+            "location": "Chennai, Bangalore/Bengaluru, Delhi / NCR",
+            "description": "Roles and Responsibilities This is a training bootcamp with no upfront fees and an assu...",
+            "skill1": "Java",
+            "skill2": "Communication Skills",
+            "skill3": "AlgorithmsData",
+            "skill4": "OOPS",
+            "skill5": "Angularjs",
+            "skill6": "wordpresscode",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Web developer",
+            "company": "Viseven",
+            "experience": "1-4 Yrs",
+            "salary": "Not disclosed",
+            "location": "New Delhi",
+            "description": "Good knowledge of JavaScript / TypeScript Good knowledge of Angular",
+            "skill1": "Javascript",
+            "skill2": "CssBootstrap",
+            "skill3": "PHP",
+            "skill4": "JQuery",
+            "skill5": "OOPS",
+            "skill6": "Java",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Frontend Web Developer ",
+            "company": "NETWORK PEOPLE SERVICES TECHNOLOGIES LIMITED",
+            "experience": "0-2 Yrs",
+            "salary": "3,00,000 - 4,00,000 PA.",
+            "location": "Mumbai",
+            "description": "We serve as Fintech partner to banks and financial institutes operating as Technology S...",
+            "skill1": "Angular",
+            "skill2": "Javascript",
+            "skill3": "jQuery",
+            "skill4": "HTML",
+            "skill5": "OOPS",
+            "skill6": "Communciation",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Web Developer",
+            "company": "Triveni Global Software Services",
+            "experience": "2-3 Yrs",
+            "salary": "Not disclosed",
+            "location": "pune",
+            "description": "Should be able to work on Agile development methodology Good to have knowledge on Ident...",
+            "skill1": "Javascript",
+            "skill2": "Communication Skills",
+            "skill3": "HTML",
+            "skill4": "AngularJS",
+            "skill5": "OOPS",
+            "skill6": "MySQL",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Senior Web Developer",
+            "company": "KNOXED INFOTECH PRIVATE LIMITED",
+            "experience": "2-5 Yrs",
+            "salary": "Not disclosed",
+            "location": "pune",
+            "description": "Job SummaryWe are looking for a Senior Web Developer (CorePHP) who is dedicated to the ...",
+            "skill1": "PHP",
+            "skill2": "HTML",
+            "skill3": "CSS",
+            "skill4": "MySQL",
+            "skill5": "JS",
+            "skill6": "Communciation",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Web Developer",
+            "company": "UrgentOp",
+            "experience": "1-5 Yrs",
+            "salary": "Not disclosed",
+            "location": "Chennai",
+            "description": "Optimizing sites for maximum speed and scalability Qualification: Any GraduateIntereste...",
+            "skill1": "CSS",
+            "skill2": "jQuery",
+            "skill3": "HTML",
+            "skill4": "Javascript",
+            "skill5": "Angularjs",
+            "skill6": "wordpresscode",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "Web Developer",
+            "company": "quray",
+            "experience": "1-3 Yrs",
+            "salary": "Not disclosed",
+            "location": "Mumbai",
+            "description": "It does not involve solving the problem, only recognizing there is a problemRelated Exp...",
+            "skill1": "Javascript",
+            "skill2": "CSS",
+            "skill3": "HTML",
+            "skill4": "AngularJS",
+            "skill5": "JQuery",
+            "skill6": "Java",
+            "daysago": "2 Days AGO"
+        },
+        {
+            "titeljob": "React Web Developer",
+            "company": "ResolenT Management Services",
+            "experience": "2-5 Yrs",
+            "salary": "2,00,000 - 6,00,000 PA.",
+            "location": "Mumbai",
+            "description": "Required React web developers having min 2.5 years of experience.Immediate joining pref...",
+            "skill1": "React.js",
+            "skill2": "Javascript",
+            "skill3": "HTML",
+            "skill4": "AngularJS",
+            "skill5": "JQuery",
+            "skill6": "wordpresscode",
+            "daysago": "2 Days AGO"
+        },
+
+        
+// Data Scientist
+    {
+        "titeljob": "Data Scientist",
+        "company": "Vanderlande Industries Private Limited",
+        "experience": "10-15 Yrs",
+        "salary": "Not disclosed",
+        "location": "pune",
+        "description": "10-15 years of relevant experience You have extensive knowledge of data science which y...",
+        "skill1": "Basic",
+        "skill2": "Backend",
+        "skill3": "Focus",
+        "skill4": "Machine learning",
+        "skill5": "Manager Technology",
+        "skill6": "Java",
+        "daysago": "14 Days AGO"
+    },
+    {
+        "titeljob": " Junior Data Scientist",
+        "company": "ZEOMINDS IT SOLUTIONS PRIVATE LIMITED",
+        "experience": "0-2 Yrs",
+        "salary": "Not disclosed",
+        "location": "pune",
+        "description": "Qualification and Experience: Fresher candidates with BTech / MTech degree in Computer ...",
+        "skill1": "Training",
+        "skill2": "Placement",
+        "skill3": "client acquisition",
+        "skill4": "Placement Coordination",
+        "skill5": "maintenance",
+        "skill6": "Communciation",
+        "daysago": "23 Days AGO"
+    },
+    {
+        "titeljob": "Associate Data Scientist",
+        "company": "AlgoAnalytics Private Ltd",
+        "experience": "0-1 Yrs",
+        "salary": "Not disclosed",
+        "location": "Mumbai",
+        "description": "Education Qualification : Bachelors or Masters in Engineering, Computers, Mathematics o...",
+        "skill1": "Artificial Intelligence",
+        "skill2": "Python",
+        "skill3": "Deep Learning",
+        "skill4": "written communication",
+        "skill5": "Machine Learning",
+        "skill6": "Communciation",
+        "daysago": "7 Days AGO"
+    },
+    {
+        "titeljob": "Associate Data Scientist Consultant",
+        "company": "Dsmatics Technology Solutions",
+        "experience": "1-4 Yrs",
+        "salary": "5,00,000 - 11,00,000 PA.",
+        "location": "pune",
+        "description": "Immediate joiners would be highly preferred2+ years of Project or work Experience with ...",
+        "skill1": "Machine Learning",
+        "skill2": "Deep Learning",
+        "skill3": "NLP",
+        "skill4": "Machine Learning Algorithms",
+        "skill5": "Computer Vision",
+        "skill6": "Communciation",
+        "daysago": "15 Days AGO"
+    },
+    {
+        "titeljob": "Data Scientist (Python)",
+        "company": "Om Software Internet Solutions Private Limited",
+        "experience": "1-4 Yrs",
+        "salary": "4,00,000 - 9,00,000 PA",
+        "location": "pune",
+        "description": "We are looking for an experienced Data Scientist (Python) to join us Developing Docker-...",
+        "skill1": "Data Science",
+        "skill2": "Python",
+        "skill3": "PySpark",
+        "skill4": "Numpy",
+        "skill5": "Pandas",
+        "skill6": "Docker",
+        "daysago": "17 Days AGO"
+    },
+
+    {
+        "titeljob": "Data Science Fresher",
+        "company": "TRADEXA TECHNOLOGIES PRIVATE LIMITED",
+        "experience": "1-4 Yrs",
+        "salary": "Not disclosed",
+        "location": "Mumbai",
+        "description": "Immediate joiners would be highly preferred2+ years of Project or work Experience with ...",
+        "skill1": "Data Science",
+        "skill2": "Excel",
+        "skill3": "SQL",
+        "skill4": "IT Skills",
+        "skill5": "Data Analytics",
+        "skill6": "Maintenance",
+        "daysago": "21 Days AGO"
+    },
+    {
+        "titeljob": "Specialist - Data Scientist",
+        "company": "AT and T Global Business Services India P. Ltd",
+        "experience": "1-4 Yrs",
+        "salary": "Not disclosed",
+        "location": "Mumbai",
+        "description": "The Data Science team is responsible for driving algorithmic innovation across the comp...",
+        "skill1": "Product management",
+        "skill2": "Training",
+        "skill3": "Operations research",
+        "skill4": "data science",
+        "skill5": "Machine Learning",
+        "skill6": "MySQL",
+        "daysago": "FEW HOURS AGO"
+    },
+    {
+        "titeljob": "Associate",
+        "company": "TATA CAPITAL LTD",
+        "experience": "0-1 Yrs",
+        "salary": "2,00,000 - 6,00,000 PA.",
+        "location": "pune",
+        "description": "Hands on experience with scoring / data modeling Tools",
+        "skill1": "Customer acquisition",
+        "skill2": "Customer life cycle management",
+        "skill3": "Logistic regression",
+        "skill4": "Forecasting",
+        "skill5": "Machine Learning",
+        "skill6": "MySQL",
+        "daysago": "2 Days AGO"
+    },
+    {
+        "titeljob": "Data Scientist- Fresher",
+        "company": "DATAFACTZ SOLUTION PVT LTD",
+        "experience": "0-1 Yrs",
+        "salary": "Not disclosed",
+        "location": "New Delhi",
+        "description": "Masters degree or Bachelors degree in computer science, Information Technology (IT), or...",
+        "skill1": "Python",
+        "skill2": "Machine Learning",
+        "skill3": "Analytical",
+        "skill4": "Big Data Frameworks",
+        "skill5": "SQL",
+        "skill6": "Communciation",
+        "daysago": "2 Days AGO"
+    },
+    {
+        "titeljob": "Senior Data Scientist",
+        "company": "ICERTIS Solutions",
+        "experience": "10-14 Yrs",
+        "salary": "Not disclosed",
+        "location": "pune",
+        "description": "Build predictive models that are accurate and robust and that help our customers to uti...",
+        "skill1": "Text mining",
+        "skill2": "Cloud computing",
+        "skill3": "Logistic regression",
+        "skill4": "Architectural design",
+        "skill5": "Machine Learning",
+        "skill6": "MySQL",
+        "daysago": "2 Days AGO"
+    },
+    {
+        "titeljob": "PhD/Post Graduate in Machine Learning/Computational Mathematics",
+        "company": "DCG Data-Core Systems Pvt",
+        "experience": "We are looking for Data Scientists who love challenges and will join a team in executin...",
+        "salary": "2,00,000 - 6,00,000 PA.",
+        "location": "Mumbai",
+        "description": "Employment Type:Full Time, PermanentCandidates should have hands-on experience in the D...",
+        "skill1": "Wordpress",
+        "skill2": "MySQL",
+        "skill3": "Algorithms",
+        "skill4": "AngularJS",
+        "skill5": "Machine Learning",
+        "skill6": "java",
+        "daysago": "8 Days AGO"
+    },
+    {
+        "titeljob": "Jr. Data Scientist",
+        "company": "AdvaRisk",
+        "experience": "1-5 Yrs",
+        "salary": "3,00,000 - 4,00,000 PA.",
+        "location": "New Delhi",
+        "description": "We are open for Work from Home / Part time options as well for right candidatesYou shou...",
+        "skill1": "PHP",
+        "skill2": "iOS",
+        "skill3": "Algorithms",
+        "skill4": "Architectural design",
+        "skill5": "Machine Learning",
+        "skill6": "Communciation",
+        "daysago": "3 Days AGO"
+    },
+    {
+        "titeljob": "Engineer Software IT",
+        "company": "CLEAN HARBORS INDIA LLP",
+        "experience": "0-2 Yrs",
+        "salary": "2,00,000 - 6,00,000 PA.",
+        "location": "Mumbai",
+        "description": "Should be open to working with a startup Company Proficient with Objective-C and Swift",
+        "skill1": "CSS",
+        "skill2": "CssBootstrap",
+        "skill3": "objective c",
+        "skill4": "MySQL",
+        "skill5": "maintenance",
+        "skill6": "Java",
+        "daysago": "8 Days AGO"
+    },
+
+    
+
+// UI Developer
+    {
+        "titeljob": "UI UX Designer",
+        "company": "Aptech Limited",
+        "experience": "3-5 Yrs",
+        "salary": "Not disclosed",
+        "location": "Mumbai",
+        "description": "Responsibilities :Visual Ideation & designing the web/ WAP sites, web pages & digital a...",
+        "skill1": "UI ",
+        "skill2": "CSS",
+        "skill3": "HTML5",
+        "skill4": "AngularJS",
+        "skill5": " web-designing",
+        "skill6": "Communciation",
+        "daysago": "8 Days AGO"
+    },
+    {
+        "titeljob": "UI/UX Designer",
+        "company": "eClerx",
+        "experience": "5-10 Yrs",
+        "salary": "Not disclosed",
+        "location": "Mumbai",
+        "description": "5+ years experience building excellent consumer products and knowledge of web design an...",
+        "skill1": "Html5",
+        "skill2": "JavaScript",
+        "skill3": "CSS",
+        "skill4": "UX design",
+        "skill5": "Invision",
+        "skill6": "IT Skills",
+        "daysago": "12 Days AGO"
+    },
+    {
+        "titeljob": "HCL || Experience Designer",
+        "company": " HCL Technologies",
+        "experience": "0-2 Yrs",
+        "salary": "Not disclosed",
+        "location": "Mumbai",
+        "description": " Bachelor / Masters degree in Strategic Design & Management, Human-Computer Interaction,...",
+        "skill1": "Figma",
+        "skill2": "Visio",
+        "skill3": "Adobe",
+        "skill4": "Ui Ux Development",
+        "skill5": "Illustrator",
+        "skill6": "Auto Cadd",
+        "daysago": "2 Days AGO"
+    },
+    {
+        "titeljob": "Product Designer",
+        "company": "Truecaller",
+        "experience": "0-3 Yrs",
+        "salary": "Not disclosed",
+        "location": "Mumbai",
+        "description": "Create design visualisations to help everyone understand what the best experience shoul...",
+        "skill1": "User research",
+        "skill2": "Illustrator",
+        "skill3": "adobe creative suite",
+        "skill4": "Agile",
+        "skill5": "HTML",
+        "skill6": "Communciation",
+        "daysago": "1 Days AGO"
+    },
+    {
+        "titeljob": "UI and UX Manager",
+        "company": " Lokmat Media Private Limited",
+        "experience": "3-6 Yrs",
+        "salary": " 3,00,000 - 7,00,000 P.A.",
+        "location": "Mumbai",
+        "description": "Will be responsible for working on interface design & UI web development",
+        "skill1": "web development",
+        "skill2": "Ux Design",
+        "skill3": "Ajax",
+        "skill4": "Sass / Less",
+        "skill5": "HTML",
+        "skill6": "javascript",
+        "daysago": "1 Days AGO"
+    },
+    {
+        "titeljob": "Senior UI/UX Designer",
+        "company": "GEP",
+        "experience": "3-5 Yrs",
+        "salary": "Not disclosed",
+        "location": "pune",
+        "description": "portfolio should show casethoughtful design w ork through w ireframes, sketches, A port...",
+        "skill1": "Adobe XD",
+        "skill2": "Prototypes",
+        "skill3": "HTML",
+        "skill4": "Javascript",
+        "skill5": "Axure",
+        "skill6": "Wireframes",
+        "daysago": "29 Days AGO"
+    },
+    {
+        "titeljob": "Hardware Design Engineer 5G",
+        "company": "Jio",
+        "experience": "0-3 Yrs",
+        "salary": "Not disclosed",
+        "location": "pune",
+        "description": "0 - Maximum 3 Years create exceptional user experience Solid experience in user flows, ...",
+        "skill1": "Visual Design",
+        "skill2": "HTML",
+        "skill3": "Tool design",
+        "skill4": "Javascript",
+        "skill5": "Photoshop",
+        "skill6": "Hardware design",
+        "daysago": "6 Days AGO"
+    },
+    {
+        "titeljob": "UX Designer",
+        "company": "Narayana Health",
+        "experience": "2-5 Yrs",
+        "salary": "Not disclosed",
+        "location": "pune",
+        "description": "Experience with multi-platform development, including Native Mobile, Responsive Web and...",
+        "skill1": "Communication Design",
+        "skill2": "Interaction Design",
+        "skill3": " Industrial Design",
+        "skill4": "UX",
+        "skill5": "Adobe XD",
+        "skill6": "Figma",
+        "daysago": "2 Days AGO"
+    },
+    {
+        "titeljob": "Conversational Designer - Chatbot UX Designer",
+        "company": "Schneider Electric",
+        "experience": "7-12 Yrs",
+        "salary": "Not disclosed",
+        "location": "New Delhi",
+        "description": "7 -10 years of design experience, preferably in Enterprise software environmentExperien...",
+        "skill1": "Visual Design",
+        "skill2": "Interaction design",
+        "skill3": " User research",
+        "skill4": "Content strategy",
+        "skill5": "User interface designing",
+        "skill6": "Artificial Intelligence",
+        "daysago": "2 Days AGO"
+    },
+    {
+        "titeljob": "Associate Engineer UX/UI",
+        "company": "Associate Engineer UX/UI Deutsche Bank",
+        "experience": "4-5 Yrs",
+        "salary": "Not disclosed",
+        "location": "New Delhi",
+        "description": "6 years experience working with UX teams operating in Agile methodologies Strong experi...",
+        "skill1": "Information architecture",
+        "skill2": "banking products",
+        "skill3": "Training and Development",
+        "skill4": "Tool design",
+        "skill5": "Product design",
+        "skill6": "Communciation",
+        "daysago": "15 Days AGO"
+    },
+    {
+    "titeljob": "Need Immediate joiners For UI/UX Designers - PAN India",
+    "company": "Virtusa Consulting Services",
+    "experience": "7-12 Yrs",
+    "salary": "Not disclosed",
+    "location": "Mumbai",
+    "description": "Must have experience into API integrationProficient in design and prototyping tools inc...",
+    "skill1": "User Experience Design",
+    "skill2": "Api Integration",
+    "skill3": "communication",
+    "skill4": "UX design",
+    "skill5": "Sass",
+    "skill6": "javascript",
+    "daysago": "2 Days AGO"
+} ,
+ {
+    "titeljob": "Hiring For UI/UX Developer For IBM",
+    "company": "Teamlease Servcies limited",
+    "experience": "3-8 Yrs",
+    "salary": "Not disclosed",
+    "location": "pune",
+    "description": "Strong understanding of Web architecture and technologies & have ample experience in im...",
+    "skill1": "Material-UI",
+    "skill2": " JSON",
+    "skill3": "HandleBar",
+    "skill4": "ReactsJS",
+    "skill5": "Redux",
+    "skill6": "MV-VM/MVC",
+    "daysago": "4 Days AGO"
+}
+
+]
+
+document.querySelector("#searchbtn").addEventListener("click",search)
+
+
+function search(){
+    event.preventDefault();
+    var info=document.querySelector("#query").value;
+    localStorage.setItem("information",JSON.stringify(info))
+    window.location.href="recomendedjob.html"
+    info.location.reload();
+ 
+ console.log(info)
+}
+
+ </script>
