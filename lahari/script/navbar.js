@@ -5,7 +5,7 @@ function navbar(){
     </div>
     <div class="mid">
     <ul>
-    <li class="active"><a href="job.html">JOBS</a>
+    <li class="active"><a href="../sahillagad/job.html">JOBS</a>
        <div class="jobchild">
 
         <ul>
@@ -24,7 +24,7 @@ function navbar(){
 
 
     </li>
-    <li><a href="recruiters.html">RECRUITERS</a>
+    <li><a href="../sahillagad/recruiters.html">RECRUITERS</a>
         <div class="jobchild">
         <ul>
             <li><a href="#">Browse All Recruiters</a></li>
@@ -47,7 +47,7 @@ function navbar(){
            </ul>
         </div>
     </li>
-    <li><a href="tool.html">TOOLS</a>
+    <li><a href="./tool.html">TOOLS</a>
         <div class="jobchild">
             <ul>
                 <li>Career Dashboard</li>

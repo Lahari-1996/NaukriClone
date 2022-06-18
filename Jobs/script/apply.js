@@ -28,8 +28,8 @@ function cancleform(){
      console.log(location,location1,period1,prev1,bond1,technology1)
 
      if((location ==true || location1==true)&&(period ==true|| period1==true) && (bond ==true || bond1==true)&& (technology ==true|| technology1==true)&&(prev ==true || prev1==true)){
-        alert("You have successfully applied")
-        window.location.href="./jobs.html"
+        alert("Successfully applied")
+        window.location.href="../lahari/home.html"
      }
      else{
         alert("Please provide answer to this question")
