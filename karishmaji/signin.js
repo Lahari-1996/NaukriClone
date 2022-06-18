@@ -13,7 +13,7 @@ function login(){
     {
 
         count++;
-        window.location.href="profile.html";
+        window.location.href="../lahari/home.html";
         alert("login successfull")
     
     dataji.push(el)

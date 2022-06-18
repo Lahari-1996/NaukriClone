@@ -162,7 +162,7 @@ function navbar(){
         </div>
     </li>
 
-    <li><a href="profile.html">MY NAUKRI</a>
+    <li><a href="../karishmaji/profile.html">MY NAUKRI</a>
      <div class="rightchild">
          <ul>
              <li>Edit Profile</li>
