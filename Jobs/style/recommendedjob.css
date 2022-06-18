@@ -1,0 +1,164 @@
+#advertisement{
+    width: auto;
+    height: auto;
+   
+    
+    }
+    
+    #advertisement>div:nth-child(1)>div{
+        margin-top: 20px;
+        display: flex;
+        padding-left: 6px;
+    }
+    
+    #advertisement>div:nth-child(1)>div>img{
+        
+        width: 100px;
+    }
+    #advertisement>div:nth-child(1)>p{
+        margin-left: 6px;
+        font-weight: 300px;
+    }
+    #advertisement>div:nth-child(1)>button>a{
+        text-decoration: none;
+        color: white;
+    }
+    #advertisement>div:nth-child(1)>button{
+        background-color: orangered;
+        padding: 6px;
+        border: none;
+        display: flex;
+        margin: auto;
+    }
+    #advertisement>div:nth-child(2)>h3{
+    color: gray;
+    margin-left: 10px;
+    
+    }
+    #advertisement>div:nth-child(2)>div{
+    display: grid;
+    grid-template-columns: repeat(2,100px);
+    grid-template-rows: repeat(5,50px);
+    gap: 10px;
+    justify-content: space-around;
+    
+    
+    }
+    #advertisement>div:nth-child(2)>div>img{
+        width: 100px;
+        height: 50px;
+    
+    }
+    
+    #advertisement>div:nth-child(3){
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #advertisement>div:nth-child(3)>img{
+      width: 200px;
+    
+    }
+    #advertisement>div:nth-child(3)>button{
+        background-color: white;
+        border: 1px  hsl(208,81%,58%) solid;
+        padding: 10px;
+    }
+    
+    #advertisement>div:nth-child(3)>button>a{
+        text-decoration: none;
+    }
+    #nav{
+        height: 100px;
+        width: 100%;
+        background-color: aqua;
+    }
+    #filter{
+        display: flex;
+    }
+    .filter1{
+        width: 30%;
+       
+        height: auto;
+    }
+    .filter2{
+        width: 60%;
+       
+        height: auto;
+       
+    }
+    .filter3{
+        width: 30%;
+        
+        height: auto;
+    }
+    .mainbox{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        
+        margin-bottom: 20px;
+       
+    }
+    .skills{
+        display: flex;
+        margin-left: 20px;
+    }
+    .skills p{
+       
+        color: gray;
+    }
+    .con{
+        margin: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .con h4,p{
+        margin-left: 20px;
+      
+    }
+    .fill{
+      
+        margin-left: 20px;
+        color: #333333;
+        font-size: 16px;
+       
+    }
+   
+    .con p{
+       
+        font-size: 16px;
+        color: gray;
+    }
+    .con h4{
+        margin-top: 20px;
+        font-size: 16px;
+        color: #333333;
+        
+    }
+    .btn{
+        position:relative;
+    }
+    .btn button{
+       margin-left:80%;
+       border: 0px;
+       margin-bottom: 10px;
+       cursor: pointer;
+    }
+    button:hover{
+       background-color:lightseagreen;
+    }
+    .loc,.salary,.department,.experience,.education{
+        margin-left: 20px;
+        color: #333333;
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .filter2 h4{
+        padding-top: 20px;
+    }
+    #button {
+       
+        width: 70px;
+        height: 40px;
+        color: #333333;
+        font-size: 16px;
+    }
