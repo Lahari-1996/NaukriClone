@@ -1,0 +1,73 @@
+#box{
+    width: 100%;
+    background-color: #333333;
+    height: 100px;
+
+}
+.jobtitle{
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 50px 0px 10px;
+    margin-bottom: 15px;
+    
+    font-size: 20px;
+    font-weight: bold;
+}
+.fill{
+   text-align: center; 
+   font-size: 20px;
+   font-weight: bold;
+   color: #FFFFFF;
+   margin-bottom: 20px;
+}
+#wrapper {
+    height: 100px;
+    width: 500px;
+  }
+  
+  #wrapper {
+    bottom: 50%;
+    right: 50%;
+    position: absolute;
+  }
+  #button{
+    line-height: 12px;
+  width: 18px;
+  font-size: 8pt;
+  font-family: tahoma;
+  margin-top: 1px;
+  margin-right: 2px;
+  }
+  #cont{
+    padding: 10px;
+    margin: auto;
+    color: #333333;
+    font-size: 20px;
+  }
+  #applybtn{
+   
+  
+   margin-left: 500px;
+   width: 250px;
+   height: 50px;
+   background-color: rgb(44, 209, 209);
+   border: 0px;
+   padding: 15px;
+   color: white;
+   font-size: 25px;
+   cursor: pointer;
+  
+   border-radius: 5px;
+  
+  }
+  
+
+  button :hover{
+    background-color: rgb(208, 222, 222);
+  }
+  
+  #cont >li{
+    scroll-margin-top: 10px;
+    
+  }
+ 

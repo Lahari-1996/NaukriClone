@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/apply.css">
+</head>
+<body>
+    <div id="box">
+        <div><input id="button" type="button" value="X" onclick="cancleform()"></div>
+        <div class="jobtitle">Job Title: IT Fresher</div>
+        <div class="fill">Fill this Questionnaire to Complete Apply</div>
+    </div>
+    <div id="cont">
+        <form id="form">
+
+            <ol>
+                <label>
+                    <li id="loc"></li>
+                </label>
+                
+               
+                <input type="radio" id="location" value="Yes" name="" />Yes<br>
+                
+                <input type="radio" id="location1" value="No"  name=""/> No<br><br>
+               
+
+                <li id="sal">
+                </li>
+
+                <input type="radio" id="period" value="Yes" name="" />Yes<br>
+                
+                <input type="radio" id="period1" value="No"  name=""/> No<br><br>
+
+                <li>Are you comfortable for 2.5 yrs bond including training period ?*</li>
+                <input type="radio" id="bond" value="Yes" name="" />Yes<br>
+                
+                <input type="radio" id="bond1" value="No"  name=""/> No<br><br>
+
+                <li>Are Flexible to work on Any technology /tool ?*</li>
+                <input type="radio" id="technology" value="Yes" name="" />Yes<br>
+                
+                <input type="radio" id="technology1" value="No"  name=""/> No<br><br>
+
+                <li> Have you previously been interviewed with us ? *</li>
+                <input type="radio" id="prev" value="Yes" name="" />Yes<br>
+                
+                <input type="radio" id="prev1" value="No"  name=""/> No<br><br>
+                
+            </ol>
+          <div id="btnn"> <button id="applybtn" onclick="submitdata(event)">Submit and Apply</button></div>
+            
+        </form>
+    </div>
+</body>
+</html>
+
+<script src="./script/apply.js">
+   
+</script>
