@@ -1,10 +1,11 @@
 function navbar(){
     return `<div id="left">
-        <img src="https://static.naukri.com/s/4/100/i/naukri_Logo.png" alt="logo">
+    <a href="home.html"> <img src="https://static.naukri.com/s/4/100/i/naukri_Logo.png" alt="logo"></a>
+        
     </div>
     <div class="mid">
     <ul>
-    <li class="active"><a href="#">JOBS</a>
+    <li class="active"><a href="job.html">JOBS</a>
        <div class="jobchild">
 
         <ul>
@@ -23,7 +24,7 @@ function navbar(){
 
 
     </li>
-    <li><a href="#">RECRUITERS</a>
+    <li><a href="recruiters.html">RECRUITERS</a>
         <div class="jobchild">
         <ul>
             <li><a href="#">Browse All Recruiters</a></li>
@@ -46,7 +47,7 @@ function navbar(){
            </ul>
         </div>
     </li>
-    <li><a href="#">TOOLS</a>
+    <li><a href="tool.html">TOOLS</a>
         <div class="jobchild">
             <ul>
                 <li>Career Dashboard</li>
@@ -161,7 +162,7 @@ function navbar(){
         </div>
     </li>
 
-    <li><a href="#">MY NAUKRI</a>
+    <li><a href="profile.html">MY NAUKRI</a>
      <div class="rightchild">
          <ul>
              <li>Edit Profile</li>
@@ -186,24 +187,135 @@ function navbar(){
 
 }
 
-// function footer(){
-//     return `
-//     <div id="left">
-//             <img src="https://static.naukri.com/s/4/100/i/naukri_Logo.png" alt="logo">
-//         </div>
-//         <div id="mid">
-//             <div><p>JOBS</p></div>
-//             <div><p>RECRUITERS</p></div>
-//             <div><p>COMPANIES</p></div>
-//             <div><p>TOOLS</p></div>
-//             <div><p>SERVICES</p></div>
-//             <div><p>MORE</p></div>
-//         </div>
-//         <div id="right">
-//             <div><i class="fa-regular fa-bell"></i></div>
-//             <div><p>MY NAUKRI</p></div>
-//         </div>`
 
-// }
+function footer(){
+    return `
+    <div id="footer1">
+    <div id="foot">
+        <div id="foot1">
+            <h3>Information</h3>
+            <p>About Us</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Careers with Us</p>
+            <p>Sitemap</p>
+            <p>Contact Us</p>
+            <p>FAQs</p>
+            <p>Summons/Notices</p>
+            <p>Grievances</p>
+            <p>Fraud Alert</p>
+            <p>Trust & Safety</p>
+            <h3>Naukri on Mobile</h3>
+            <img src="images/playstore.jpg" alt=""><br>
+            <img src="images/apple.jpg" alt="">
+            
+        </div>
+        <div id="foot2">
+            <h3>Jobseekers</h3>
+            <p>Upload Resume</p>
+            <p>Search Jobs</p>
+            <p>Create Job Alert</p>
+            <p>Report a Problem</p>
+            <p>Naukri Blogs</p>
+            <h3>Browse Jobs</h3>
+            <p>Browse All Jobs</p>
+            <p>Premium MBA Jobs</p>
+            <p>Premium Engineering Jobs</p>
+            <p>Govt. Jobs</p>
+            <p>International Jobs</p>
+            <p>Jobs in Gulf</p>
+            <p>Jobs by Company</p>
+            <p>Jobs by Category</p>
+            <p>Jobs by Designation</p>
+            <p>Jobs by Location</p>
+            <p>Jobs by Skill</p>
+            
+        </div>
+        <div id="foot3">
+            <h3>Jobseeker Services</h3>
+            <p>Priority Applicant</p>
+            <p>Resume Display</p>
+            <p>Resume Writting</p>
+            <p>Jobs4U</p>
+            <p>Recruiter Connection</p>
+            <p>Job Search Booster</p>
+            <h3>Naukri Learning</h3>
+            <p>Software and Technology</p>
+            <p>Artificial Intelligence & Data Science</p>
+            <p>Management</p>
+            <p>Finance</p>
+            <p>Creativity and Design</p>
+            <p>Emerging Technologies</p>
+            <p>Engineering-non CS</p>
+            <p>Healthcare</p>
+            <p>Energy and Environment</p>
+            <p>Social Sciences</p>
+            <p>Personal growth</p>
+        </div>
+        <div id="foot4">
+            <h3>Employers</h3>
+            <p>Job Posting</p>
+            <p>Resume Database Access</p>
+            <p>Recruiter Login</p>
+            <p>Naukri RMS</p>
+            <p>Buy Resume Packages Online</p>
+            <p>Transition Services</p>
+            <p>Report a Problem</p>
+            <p>Recruiters from US-A,call</p>
+            <p>Toll Free # 1866-557-3340</p>
+            <h3>Ambition Box</h3>
+            <p>Interview Questions</p>
+            <p>About Companies</p>
+            <p>Share Interview Advice</p>
+            <p>Write Company Review</p>
+            <p>Company Reviews</p>
+            <p>Company Salaries</p>
+            <h3>Follow Us</h3>
+            <img src="images/fb.jpg" alt="">
+            <img src="images/twiter.jpg" alt="">
+            <img src="images/linkedin.jpg" alt="">
+        </div>
+    </div>
+   
+</div>
+<div id="footer2">
+        <h2>Partner Sites</h2>
+        <div id="motionfooter">
+            <marquee>
+                <div id="motionimg">
+                    <div><img src="https://cdn.newsnationtv.com/resize/460_-/images/2020/09/11/zomato-96.jpg" alt="zomato"></div>
+                    <div><img src="https://ask2human.com/wp-content/uploads/2020/06/Meritnation-Customer-Care-1170x400.jpg" alt="meritnation"></div>
+                    <div><img src="https://image4.owler.com/logo/mydala_owler_20160226_214954_original.png" alt="mydala"></div>
+                    <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-sneufhma344t4ukj6c74he4pc0-20180925164322.Medi.jpeg" alt="paisabazzar"></div>
+                    <div><img src="https://customercarecontacts.com/wp-content/uploads/2018/01/99acres-logo.jpg" alt="99acres"></div>
+                    <div><img src="https://www.medianews4u.com/wp-content/uploads/2019/08/Jeevansathi.jpg" alt="jeevansathi"></div>
+                    <div><img src="https://customercarecontacts.com/wp-content/uploads/2018/06/naukrigulf-logo.jpg" alt="naukrigulf"></div>
+                    <div><img src="http://w10.naukri.com/mailers/tips_04may10/gifs/logo.gif" alt="firstnaukri"></div>
+                    <div><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/h6oclq7lq9rqqb0hze3d" alt="brijj"></div>
+                
+                <div><img src="https://media-exp1.licdn.com/dms/image/C4E0BAQFTbt5HmwY9HA/company-logo_200_200/0/1519904647162?e=2147483647&v=beta&t=9QA6FHaba1P_17gG7NrtA0KW3pSqLWxKpvtAADtL1Sc" alt="allcheckdeal"></div>
+                <div><img src="https://images.shiksha.ws/public/images/shareThumbnail.jpg" alt="siksha"></div>
+                <div><img src="https://m.economictimes.com/thumb/msid-77048166,width-1200,height-900,resizemode-4,imgsize-72290/policybazaar.jpg" alt="policybazzar"></div>
 
-export default navbar;
+                
+                </div>
+            </marquee>
+        
+        </div>
+    
+       
+</div>
+<div id="footer3">
+    <p>All rights reserved @ 2022 Info Edge (India) Ltd.</p>
+</div>
+
+        `
+
+}
+
+
+
+
+
+
+export  {navbar,footer}
