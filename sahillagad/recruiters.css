@@ -1,0 +1,214 @@
+#display{
+
+width:964px;
+height: auto;
+/* border: 1px green solid; */
+margin: auto;
+display: flex;
+}
+
+
+#left{
+width: 70%;
+height: auto;
+/* border: 1px red solid; */
+
+}
+
+#right{
+width: 30%;
+height: 1000px;
+/* border: 1px yellow solid; */
+}
+
+/* /* carsoal */
+#mar>div{
+
+height: 100px;
+
+margin: auto;
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+display: flex;
+align-items: center;
+}
+#mar>div>img{
+
+}
+#mar>h2{
+    color: gray;
+    padding-left:10px ;
+}
+
+
+#recruiters>div:nth-child(1){
+
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#cattegary>button{
+padding: 10px;
+margin-left:20px ;
+border: none;
+
+}
+
+#cattegary>button>a{
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
+#info .item{
+
+height: 350px;
+margin-top: 20px;
+padding:10px ;
+margin-left: 0px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.item>div:nth-child(1){
+    display: flex;
+}
+
+.item>div:nth-child(1)>img{
+    height: 110px;
+    padding-left: 13px;
+}
+
+.item>div:nth-child(1)>div{
+    margin-top: 0px;
+    margin-left: 20px;
+line-height: 0%;
+
+}
+.item>h3{
+    margin-top: 0px;
+    margin-bottom:0px ;
+    padding-left: 10px;
+    color: gray;
+}
+.item>h2{
+    padding-left: 10px;  
+    font-size: 16px; 
+}
+.item>h2>a{
+    text-decoration:none ;
+    font-size:17px;
+  
+}
+#but{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right:10px ;
+}
+#but>button{
+    background-color: white;
+    padding: 7px;
+}
+#but>button:nth-child(1){
+
+border: none;
+border: .8px gray solid;
+width: 150px;
+
+}
+#but>button:nth-child(2){
+
+border: none;
+
+}
+#but>button:nth-child(1):hover{
+    
+    background-color:hsl(208,81%,58%) ;
+}
+#but>button:nth-child(1)>a:hover{
+    color: white;
+}
+
+#but>button>a{
+    text-decoration: none;
+}
+.item>p{
+    color: hsl(211,100%,50%);
+    padding-left: 10px;
+    
+}
+#advertisement{
+    width: 250px;
+    height: 1000px;
+    /* border: 1px blue solid; */
+    
+    }
+    
+    #advertisement>div:nth-child(1)>div{
+        margin-top: 20px;
+        display: flex;
+        padding-left: 6px;
+    }
+    
+    #advertisement>div:nth-child(1)>div>img{
+        
+        width: 100px;
+    }
+    #advertisement>div:nth-child(1)>p{
+        margin-left: 6px;
+        font-weight: 300px;
+    }
+    #advertisement>div:nth-child(1)>button>a{
+        text-decoration: none;
+        color: white;
+    }
+    #advertisement>div:nth-child(1)>button{
+        background-color: orangered;
+        padding: 6px;
+        border: none;
+        display: flex;
+        margin: auto;
+    }
+    #advertisement>div:nth-child(2)>h3{
+    color: gray;
+    margin-left: 10px;
+    
+    }
+    #advertisement>div:nth-child(2)>div{
+    display: grid;
+    grid-template-columns: repeat(2,100px);
+    grid-template-rows: repeat(5,50px);
+    gap: 10px;
+    justify-content: space-around;
+    
+    
+    }
+    #advertisement>div:nth-child(2)>div>img{
+        width: 100px;
+        height: 50px;
+    
+    }
+    
+    #advertisement>div:nth-child(3){
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #advertisement>div:nth-child(3)>img{
+      width: 200px;
+    
+    }
+    #advertisement>div:nth-child(3)>button{
+        background-color: white;
+        border: 1px  hsl(208,81%,58%) solid;
+        padding: 10px;
+    }
+    
+    #advertisement>div:nth-child(3)>button>a{
+        text-decoration: none;
+    }
