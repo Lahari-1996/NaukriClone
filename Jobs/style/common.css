@@ -1,0 +1,325 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+#main1{
+  background-color: rgb(189, 210, 229);
+    width: 100%;
+    height: auto;
+   
+    margin-top: 10px;
+}
+.home{
+ padding-top: 10px;
+color: #999999;
+  font-size: 20px;
+ 
+  
+}
+#ssss{
+   margin-left: 1150px; 
+   font-size: 20px;
+  
+
+   
+ 
+}
+
+#nav22{
+   
+     height: 100px;
+    width: 100%; 
+     display: flex; 
+   
+}
+
+
+ 
+#root1{
+    width: 60%;
+    /* border: 1px solid blue; */
+    /* height: 400px; */
+    margin-top: 15px;
+    margin-left: 40px;
+
+}
+.first{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+   
+}
+.first >p{
+    color: grey;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.first >h2{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+#post{
+    margin: 10px;
+    margin-bottom: 10px;
+}
+#root2{
+    width: 40%;
+    height: 400px; 
+    
+    margin-top: 20px;
+}
+.vl {
+    border-left: 0.1px solid rgb(142, 143, 142);
+    height: 15px;
+    margin-top: 6px;
+    margin-left: 6px;
+  }
+  hr{
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 0.1px;
+    color: white;
+  }
+  #root1{
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     background-color: white;
+  }
+  #root2{
+    
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 15px;
+        height: auto;
+       
+       
+
+       
+  }
+  
+  #root2 >h2{
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+  #jobin1,#jobin2,#jobin3{
+    margin-left: 25px;
+  
+    padding: 10px 0px 0px 0px;
+  }
+ 
+
+
+
+button {
+    position: relative;
+    left: 80%;
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+    margin-bottom: 10px;
+   
+
+}
+#apply{
+    background-color: rgb(81, 168, 221);
+    font-size: 15px;
+    color: white;
+    border: 0px ;
+    font-weight: bold;
+}
+#apply a{
+    color: azure;
+    text-decoration: none;
+}
+#save{
+    border: 1px solid lightblue;
+}
+#save a{
+    color:rgb(38, 145, 211);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+#apply:hover{
+    background-color:rgb(64, 64, 209);
+}
+#save:hover{
+  background-color:rgb(128, 215, 215);
+}
+.one{
+  color: #bdc3bd;
+}
+.two {
+  color: #bdc3bd;
+}
+.hi{
+  background-color: #E8F2FF99;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+
+#applied{
+margin-top: 20px;
+margin-left: 20px;
+
+
+padding: 10px;
+}
+
+#post{
+    display: flex;
+    justify-content:left;
+  padding-bottom: 20px;
+   
+}
+#post > .one,.two,.three{
+    margin-left: 20px;
+}
+#applied{
+    display:flex;
+}
+.vls {
+    border-left: 6px solid rgb(0, 145, 255);
+    height: 20px;
+   
+  }
+  #vls1{
+    margin-left: 10px;
+  }
+  #radio{
+    margin-left: 10px;
+   padding-bottom: 20px;
+    
+   
+  }
+  #application,#skills,#location,#experience{
+    
+    border-radius:100%;
+    margin-left:20px;
+    margin-top: 10px;
+    margin-right: 10px;
+  
+    
+  }
+  #radio input[type="checkbox"] {
+    /* visibility: hidden; */
+    color: #66bb6a;
+   
+    
+  }
+  #title{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+   
+    
+  }
+  
+  
+  
+  .round input[type="checkbox"]:checked + label:after {
+    opacity: 10;
+    color: #66bb6a;
+    
+
+  }
+  #fix{
+    margin-left: 20px;
+  }
+
+  .info {
+    margin-left: 20px ;
+    padding: 10px;
+    line-height: 22px;
+  }
+
+  .info >h2{
+    margin-top: 20px;
+    color: #000000;
+    font: 16px;
+    margin-bottom: 20px;
+  }
+  .fix1{
+    margin: 10px;
+    display: flex;
+  }
+  .fix1 >a {
+    margin-left: 60px;
+  }
+  .fix22{
+    
+    margin-left: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #333333;
+  }
+  .fix{
+    margin-left: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    color:#999999;
+
+  }
+  .fix2 >strong{
+    margin-bottom: 200px;
+    margin-left: 10px;
+   
+  }
+  .fix2 >label{
+    color:#999999;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .fix2 >p{
+    color: #333333;
+    font: 16px;
+    margin-top: 10px;
+    line-height: 25px;
+    font-style:calc();
+    margin-left: 10px;
+  }
+  .degree{
+    display: flex;
+  }
+  
+  #jobin2 {
+    
+  }
+  .div{
+    margin: 20px;
+    line-height: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .div ,p,h4{
+    margin-left: 20px;
+    color: #333333;
+  }
+  
+  
+  
+  
+
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+
