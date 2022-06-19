@@ -10,642 +10,406 @@
       rel="stylesheet">
       <link rel="stylesheet" href=".\style\style.css">
     <style>
-      *{
-    font-family:Roboto,sans-serif;;
-}
-        #bgimage{
-            width: 100%;
-           margin-left: 0;
-            height: 350px;
-            margin-top:85px;
-            
-        }
-        #bg>img{
-            width: 100%;
-            height:350px;
-            /* position: absolute; */
-        }
-        #displayed{
-            position: relative;
-            margin-top: -360px;
-        }
-        #searchbar{
-            width: 750px;
-            height: 55px;
-            margin-left: 250px;
-            border: 1px solid ;
-            display: flex;
-            align-items: center;
-            margin-top: -10px;
-        }
-        h2{
-            color: white;
-            font-family: Roboto,sans-serif;
-            margin-left: 250px;
-            padding-top: 40px;
-        
-        }
-        #query{
-            width: 670px;
-            height: 94%;
-            
-          
-        }
-        
-        #searchbtn{
-            width: 130px;
-            height: 107%;
-             font-size: 18px;
-            font-family:Roboto,sans-serif;
-            background-color: rgb(77, 77, 232);
-            border: 0px;
-            color: white;
-        }
-        #homedatas{
-            width: 100%;
-            height: auto;
-            margin-top: 170px;
-            padding-bottom: 50px;
-            background-color: rgb(244, 237, 237);
-            display: flex;
-        }
-
-        #leftcard{
-           width: 800px;
-           height: auto;
-           margin-left: 230px;
-        }
-        /* dropdown menu for main div */
-        
-       
-  
-        #rating{
-            width: 100%;
-           height: 250px;
-           margin-top: 60px;
-           padding-bottom: 20px;
-           background-color: white;
-           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        }
-        #rating>img{
-            width: 120px;
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-        #rating>h3{
-            margin-left: 20px;
-            font-family: Roboto,sans-serif;
-        }
-        #rating>p{
-            margin-left: 30px;
-            font-size: 18px;
-            font-family: Roboto,sans-serif;
-        }
-        #rating>button{
-            padding: 15px 25px 15px 25px;
-            margin-top: -80px;
-            margin-left: 570px;
-            font-size: 18px;
-            color: white;
-            background-color: rgb(33, 138, 212);
-            border: 0px;
-            
-        }
-        
-       #recomended{
-           width: 96%;
-           height: 360px;
-           padding: 15px;
-           margin-top: -10px;
-           background-color: white;
-           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-       }
-     a{
-         text-decoration: none;
-     }
-       #recomended>div{
-           display: flex;
-           margin-top: -10px;
-           color: gray;
-       }
-       #recomended>div>p{
-           margin-left: 20px;
-       }
-       #recomended>div>p+p{
-           margin-left: 50px;
-       }
-       #recomended>h4{
-           margin-top: 10px;
-           color: black;
-           margin-left: 20px;
-       }
-       #recomended>p{
-           margin-top: -6px;
-           margin-left: 20px;
-           color: gray;
-       }
-       
-       #recomended>p+h3{
-        margin-top: -10px;
-        color: rgb(90, 90, 239);
-        text-align: end;
-       }
-       #newalerts{
-        width: 100%;
-           height: 350px;
-           margin-top: 30px;
-           background-color: white;
-           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-       }
-
-       #newalert>div{
-           display: flex;
-           margin-top: -10px;
-           color: gray;
-       }
-       #newalert>div>p{
-           margin-left: 20px;
-       }
-       #newalert>div>p+p{
-           margin-left: 50px;
-       }
-       #newalert>h4{
-           margin-top: 10px;
-           color: black;
-           margin-left: 20px;
-       }
-       #newalert>p{
-           margin-top: -6px;
-           margin-left: 20px;
-           color: gray;
-       }
-       
-       #newalert>p+h3{
-        margin-top: -10px;
-        color: rgb(90, 90, 239);
-        text-align: end;
-        padding-right: 20px;
-       }
 
 
-       i{
-           margin-right: 10px;
-       }
 
-       h1{
-           color: rgb(100, 98, 98);
-           font-family: Roboto,sans-serif;
-           margin-top: 10px;
-       }
-       h3{
-        font-family: Roboto,sans-serif;
-        padding-top: 20px;
-        padding-left: 20px;
-      
-       }
-       .time{
-           text-align: end;
-           padding-right: 10px;
-       }
-       
-       #application{
-        width: 100%;
-           height: 270px;
-           margin-top: 30px;
-           display: flex;
-           justify-content:space-between;
-       }
-       #application>div{
-         width: 48%;
-         height: 100%;
-         background-color: white;
-           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-       }
-       #leftapp>h3{
-          padding-top: 20px;
-            margin-left: 20px;
-        }
-        #leftapp>hr{
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-        #leftapp>p{
-            margin-top: 30px;
-            font-size: 17px;
-            font-family:Roboto,sans-serif;
-            margin-left: 30px;
-        }
 
-        #rightapp>h3{
-          padding-top: 20px;
-            margin-left: 20px;
-        }
-        #rightapp>hr{
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-        #rightapp>p{
-            margin-top: 30px;
-            font-size: 18px;
-            font-family:Roboto,sans-serif;
-            margin-left: 30px;
-        }
-        #rightapp>p+h3{
-            
-            margin-top: 80px;
-            margin-left: 250px;
-            color: rgb(81, 81, 234);
-            font-family:Roboto,sans-serif;
-        }
 
-       #recruiters{
-        width: 100%;
-           height: 220px;
-           margin-top: 10px;
-           background-color: white;
-           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-       }
-       #recruiters>h3{
-          padding-top: 25px;
-            margin-left: 20px;
-        }
-       #recruiters>p{
-           font-size: 18px;
-           width: 350px;
-           margin: auto;
-           text-align: center;
-           font-family:Roboto,sans-serif;
-       }
-       #recruiters>hr{
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-        #rec{
-            margin-bottom: 10px;
-        }
-        #leftcard>h2{
-            font-size: 30px;
-            margin-top: -10px;
-            margin-left: 2px;
-            color: rgb(100, 98, 98);
-        }
 
-       
-        #leftcard>h2:nth-child(1){
-            margin-top: -30px; 
-        }
-        #connections{
-            width: 100%;
-           height: 300px;
-           margin-top: 30px;
-           background-color: white;
-           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        }
-        #connections>h3{
-          padding-top: 20px;
-            margin-left: 20px;
-        }
-        #connections>hr{
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
 
-        #left_connection{
-            margin-left: 40px;
-            display: flex;
 
-        }
-        #left_connection>div>p{
-            line-height: 10px;
-            margin-left: 20px;
-            font-size: 18px;
-            font-family:Roboto,sans-serif;
-        }
-        #left_connection>div>h1{
-            font-size: 50px;
-            color: rgb(33, 32, 32);
-            font-family:Roboto,sans-serif;
-            margin-bottom: -10px;
-        }
+/* footer */
 
-        #connection_lower{
-            
-            display: flex;
-        }
 
-        #right_connection>p{
-            width: 500px;
-            font-family:Roboto,sans-serif;
-            font-size: 18px;
-            margin-left: 70px;
-        }
-        #right_connection>button{
-            padding: 15px 30px 15px 30px;
-            margin-top: 10px;
-            margin-left: 70px;
-            font-size: 20px;
-            color: white;
-            background-color: rgb(33, 138, 212);
-            border: 0px;
-        }
-        #right_connection>h3{
-            text-align: end;
-            color: rgb(81, 81, 234);
-        }
 
-       
-      
-
-      
-       /* .carousel-inner{
-           margin: auto;
-           width: 70%;
-           display: flex;
-           overflow:hidden;
-       }
-       .carousel-item{
-           width: 100px;
-           height: 50px;
-       }
-       .carousel-item>img{
-          width: 100%;
-          height: 100%;
-       } */
-       #profileinfo{
-          width: 400px;
-          height: 500px;
-          margin-left: 30px;
-          margin-top: -230px;
-          background-color: white;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          position: absolute;
-       }
-       #barcode{
-        width: 400px;
-          height: 230px;
-          margin-left: 30px;
-          margin-top: 320px;
-          background-color: white;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          display: flex;
-       }
-       #service{
-        width: 400px;
-          height: 500px;
-          margin-left: 30px;
-          margin-top: 40px;
-          background-color: white;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-       }
-       #service{
-          width: 362px;
-          padding: 20px;
-          padding-top: 40px;
-          padding-bottom: 20px;
-          font-family: Roboto,sans-serif;
-      
-
-      }
-      #service>h3{
-        width:340px;
-        margin-right: 0px;
-        font-family: Roboto,sans-serif;
-      }
-      #service>h3:nth-child(4){
-         text-align: right;
-          color: rgb(81, 81, 224);
-      }
-      #service>h4{
-        font-size: 20px; 
-        width:340px;
-        font-family: Roboto,sans-serif;
-
-        }
-    #service>p{
-         font-size: 17px; 
-         width:340px;
-         color: rgb(66, 64, 64);
-         font-family: Roboto,sans-serif;
-         
-    }
-    .knowmore{
-      text-align: end;
-      color: blue;
-      margin-top: -40px;
-
-    }
-   
-       #faq{
-        width: 400px;
-          height: 150px;
-          margin-left: 30px;
-          margin-top: 40px;
-          background-color: white;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
-       }
-      #faq>h3{
-          margin-top: 30px;
-          margin-bottom: 10px;
-          margin-left: 20px;
-      }
-      #faq>p{
-        font-family: Roboto,sans-serif;
-        font-size: 18px;
-        margin-left: 20px;
-
-      }
-     
-    #leftbar{
-        width: 200px;
-        height: 100%;
-        font-family: Roboto,sans-serif;
-    }
-    #leftbar>h3{
-        width: 180px;
-        margin-left: 20px;
-        margin-top: 30px;
-    }
-    #leftbar>div{
-        display: flex;
-    }
-    #leftbar>div>p{
-        margin-left: 20px;
-        font-size: 18px;
-        color: rgb(66, 64, 64);
-    }
-    #leftbar>div>img{
-        width: 25px;
-        height: 25px;
-        margin-left: 10px;
-        margin-top: 18px;
-    }
-    #rightbar>img{
-        width: 120px;
-        margin-left: 40px;
-        margin-top: 30px;
-    }
-    #rightbar>p{
-        font-size: 18px;
-        margin-left: 40px;
-        margin-top: 10px;
-        color: rgb(66, 64, 64);
-    }
-   
-  
-  
-
-  
 
       
     </style>
 </head>
 <body>
-    <div id="navbar"></div>
+<div id="navbar">
+     <div id="left">
+            <a href="home.html"> <img src="https://static.naukri.com/s/4/100/i/naukri_Logo.png" alt="logo" style="width:60%; margin-top: -30px;"></a>
+                
+            </div> 
 
-    <div id="bgimage">
+  <div class="mid">
+            <ul>
+            <li class="active"><a href="job.html">JOBS</a>
+               <div class="jobchild">
+        
+                <ul>
+                    <li><a href="#">Search Jobs</a></li>
+                    <li><a href="#">Create Free Job Alert</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Jobs by Location</a></li>
+                    <li><a href="#">Jobs by Skills</a></li>
+                    <li><a href="#">Jobs by Designation</a></li>
+                    <li><a href="#">Jobs by Company</a></li>
+                    <li><a href="#">Jobs by Category</a></li>
+                    <li><a href="#">Browse All Jobs</a></li>
+              </div>
+        
+        
+        
+            </li>
+            <li><a href="recruiters.html">RECRUITERS</a>
+                <div class="jobchild">
+                <ul>
+                    <li><a href="#">Browse All Recruiters</a></li>
+                    <li><a href="#">Recruiter Connection</a></li>
+                    <li><a href="#">Go to NaukriRecruiter</a></li>
+                </ul>
+            </div>
+            </li>
+            
+            <li><a href="#">COMPANIES</a>
+                <div class="jobchild">
+                   <ul>
+                       <li>Browse All Companies</li>
+                       <li>About Companies</li>
+                       <li>Interview Questions</li>
+                       <li>Write Company Review</li>
+                       <li>Write Interview Advice</li>
+                       <li>Company Reviews</li>
+                       <li>Company Salaries</li>
+                   </ul>
+                </div>
+            </li>
+            <li><a href="tool.html">TOOLS</a>
+                <div class="jobchild">
+                    <ul>
+                        <li>Career Dashboard</li>
+                        <li>Your next career move</li>
+                        <li>Skills Trends</li>
+                        <li>Naukri Lab</li>
+                    </ul>
+                 </div>
+            </li>
+            <li><a href="#">SERVICES</a>
+                <div class="jobchild">
+                    <ul>
+                        <li id="resumewritting">Resume Writting</li>
+                        <li>Text Resume</li>
+                        <li>Visual Resume</li>
+                        <li>Resume Quality Score-Free</li>
+                        <li>Resume Samples</li>
+                        <li id="jobsforyou">Jobs For You</li>
+                        <li>job4U</li>
+                    </ul>
+                    <ul>
+                        <li id="recruiterreach">Recruiter Reach</li>
+                        <li>Resume Display</li>
+                        <li>Priority Applicant</li>
+                        <li>RecruiterConnection</li>
+                        <li>Job Search Booster</li>
+                        <li id="other">Other</li>
+                        <li>Help/FAQ</li>
+                        <li>Career Advice</li>
+                        <li>Contact Us</li>
+                        <li id="monthlysubscriptions">Monthly Subscriptions</li>
+                        <li>Basic & Premium Plans</li>
+                    </ul>
+                    <ul>
+                        <li>Courses/Certifications</li>
+                        <li>Data Science</li>
+                        <li>Machine Learning</li>
+                        <li>Big Data</li>
+                        <li>Programming</li>
+                        <li>Business Analytics</li>
+                        <li>Project Management</li>
+                        <li>Web Design</li>
+                        <li>DevOps and CloudComputing</li>
+                        <li>Marketing</li>
+                        <li>Accounting and Finance</li>
+                        <li>Banking</li>
+                        <li>Logistics and Supply Chain</li>
+                        <li>Strategy and Leadership</li>
+                    </ul>
+                 </div>
+            </li>
+            <li><a href="#">MORE</a>
+                <div class="jobchild">
+                    <ul>
+                        <li id="careertools">Career Tools</li>
+                        <li>Naukri Blog</li>
+                        <li>FAQ</li>
+                        <li>Take Home Calculator</li>
+                        <li id="studyabroad">Study Abroad</li>
+                        <li>MBA</li>
+                        <li>MS</li>
+                        <li>SOP</li>
+                        <li>GMAT</li>
+                        <li>IELTS</li>
+                    </ul>
+                    <ul>
+                       <li>Top Courses & Colleges</li>
+                       <li>MBA</li>
+                       <li>MBA Colleges in India</li>
+                       <li>Top MBA Colleges</li>
+                       <li>Engineering</li>
+                       <li>Engineering Colleges</li>
+                       <li>Top Engineering Colleges</li>
+                       <li>BBA/BBM</li>
+                       <li>BHM</li>
+                       <li>BCA,DCA,BSc CS/IT</li>
+                    </ul>
+                    <ul>
+                        <li>Top Exams</li>
+                        <li>JEE Main</Main></li>
+                        <li>JEE Advanced</li>
+                        <li>BCECE</li>
+                        <li>GATE</li>
+                        <li>CAT</li>
+                        <li>SNAP</li>
+                        <li>MAT</li>
+                        <li>NEET</li>
+                        <li>SBI PO</li>
+                        <li>IBPS PO</li>
+                    </ul>
+                </div>
+            </li>
+        
+        </ul>
+            </div>
+
+
+            <div class="right">
+                <ul>
+                <li><a href="#"><i class="fa-regular fa-bell" style="font-size:24px"></i></a>
+                    <div class="rightchild">
+                        <ul>
+                            <li>Job Recommendations</li>
+                            <li>Application Status</li>
+                            <li>Interior Designer Applied</li>
+                            <li>Pending Actions</li>
+                            <li>Verify Mobile Number</li>
+                            <li>Recomended Skills</li>
+                            <li>Engineering Design</li>
+                            <li>Recruiter Searches</li>
+                        </ul>
+                
+                    </div>
+                </li>
+            
+                <li><a href="profile.html">MY NAUKRI</a>
+                 <div class="rightchild">
+                     <ul>
+                         <li>Edit Profile</li>
+                         <li>Recomended Jobs</li>
+                         <li>Profile Performance</li>
+                         <li>Recruiter Messages</li>
+                         <li>Application Status</li>
+                         <li>Manage Alerts</li>
+                     </ul>
+                     <ul>
+                         <li>Saved Jobs</li>
+                         <li>Settings</li>
+                         <li>My Fastforward Services</li>
+                         <li>Logout</li>
+                         
+                     </ul>
+                 </div>
+               </li>
+            </ul>
+                </div>
+
+</div>
+
+
+<!-- background image section -->
+
+  <div id="bgimage">
         <div id="bg"><img src="https://i.pinimg.com/originals/c8/67/3a/c8673ad4c46ade00cf3bd0049db62b16.jpg" alt=""></div>
     </div>
-    <div id="displayed">
-        <h2>Search Jobs</h2>
-        <div id="searchbar">
-            <input type="text" placeholder="Search Jobs" id="query">
-            <button id="searchbtn">SEARCH</button>
+
+
+
+<div id="homedata">
+  <div id="homeleft">
+         <div id="displayed">
+           <h2 id="searchh2">Search Jobs</h2>
+             <div id="searchbar">
+               <input type="text" placeholder="Search Jobs" id="query">
+               <button onclick="search()" id="searchbtn">SEARCH</button>
+            </div>
+         </div>
+         <div id="rating">
+             <img src="https://static.naukimg.com/s/0/0/i/ambition_box.png" alt="">
+             <h3>Rate & Help your company win AmbitionBox Best Places to Work in India 2022 Award!</h3>
+             <p>Your opinion matters!</p>
+             <button>Rate your Company</button>
+         </div>
+         <h2 id="jobsh2">Jobs</h2>
+
+
+        <a href="recomendedjob.html">
+          <div id="recomended">
+            <h3 id="recoh3">Recommended Job</h3>
+            <hr id="recohr">
+            <h4>Inventor Designer</h4>
+            <p id="pil_p">Pennar Industries Limited</p>
+            <div id="jobdiv">
+              <p><i class="fa-solid fa-briefcase"></i>3-6 Years</p>
+              <p><i class="fa-solid fa-location-dot"></i>Hyderabad/Srcunderabad</p>
+            </div>
+            <p id="cadp">3D,CAD,Autodesk</p>
+            <p>Strong Mechanical CAD design experience of Sheet metal,structural and 3D modeling using A...</p>
+            <div id="not_dis">
+               <p >Not Disclosed</p>
+               <p >Posted 5 days ago</p>
+            </div>
+           <h3>VIEW ALL</h3>
+         </div>
+        </a>
+
+        <div id="newalerts">
+           <h3>New Jobs in My Job Alerts</h3>
+           <hr>
+           <div id="newalert"><h4>BPO for Freshers</h4>
+              <p id="unip">Universal Manpower Online</p>
+              <div id="jobdiv">
+                <p><i class="fa-solid fa-briefcase"></i>1-5 Years</p>
+                <p><i class="fa-solid fa-location-dot"></i>Bangalore/Bengaluru</p>
+              </div>
+              <p id="bba">BBA,BTech Fresher,BCA</p>
+              <p>Customer care officer employment in on Phonepe Fresher payrole</p>
+              <div id="postdiv">
+                <p>Not Disclosed</p>
+                <p>Posted 3 days ago</p>    
+              </div>
+              <h3>VIEW ALL</h3></div>  
+        </div>
+            
+        <div id="application">
+            <div id="leftapp">
+               <h3>New Recruiter Messages</h3>
+               <hr>
+               <p>You have applied for 1 JOB(s) in last 30 days</p>
+               <p>Daily Limit of Application: 50</p>
+            </div>
+            <div id="rightapp">
+              <h3>New Recruiter Messages</h3>
+              <hr>
+              <p>You have 0 saved job(s) till now.</p>
+              <h3 id="viewallh3" style="color: #4a90e2;font-size: 13px;">VIEW ALL</h3>
+            </div>
+        </div>
+
+
+        <h2>Recruiters</h2>
+
+        <div id="recruiters">
+             <h3>New Recruiter Messages</h3>
+            <hr>
+            <p>You do not have any unread message. Messages received from different recruiters will appear in this section.</p>
+        </div>
+
+        <div id="connections">
+            <h3>Recruiter Connections</h3>
+            <hr>
+            <div id="connection_lower">
+            <div id="left_connection">
+                <div id="zeros">
+                    <h1>00</h1>
+                    <h1>00</h1>
+                </div>
+                <div id="seconddiv">
+                    <div id="creditpurchase">
+                   <p>Credits</p> <p>Purchased</p>
+                    </div>
+                  <div id="creditremaining"><p>Credit</p> <p></p>Remaining</p></div>
+                </div>
+            </div>
+            <div id="right_connection">
+                <p>Buy recruiter connections credits to contact more recruiters hiring in your domain.</p>
+                <button>BUY CREDITS</button>
+                <h3>VIEW ALL</h3>
+            </div>
         </div>
     </div>
-        <div id="homedatas">
-          <div id="leftcard">
-             <div id="rating">
-                 <img src="https://static.naukimg.com/s/0/0/i/ambition_box.png" alt="">
-                 <h3>Rate & Help your company win AmbitionBox Best Places to Work in India 2022 Award!</h3>
-                 <p>Your opinion matters!</p>
-                 <button>Rate your Company</button>
-             </div>
-             <h2>Jobs</h2>
-             <a href="recomendedjob.html">
-              <div id="recomended">
-                <h3>Recommended Job</h3>
-                <hr>
-                <h4>Inventor Designer</h4>
-                <p>Pennar Industries Limited</p>
+
+</div>
+    <div id="homeright">
+        <div id="profileinfo">
+            <div id="profilepic">
+               <img src="https://cdn-icons-png.flaticon.com/512/892/892781.png?w=360" alt="">
+            </div>
+            <h3>Lahari Pattanayak</h3>
+            <p id="desig">Autocad Designer at Luxlogix</p>
+            <div id="pcomplete">
+                <p>Profile Completed(Average)</p>
+                <h4>66%</h4>
+            </div>
+            <div id="missing">
+                <p>04 Details missing</p>
+                <h4>ADD DETAILS</h4>
+            </div>
+            <a href=""><button id="updateprofile">UPDATE PROFILE</button></a> 
+            <p id="performance">Profile Performance</p>
+            <div id="appearance">
                 <div>
-                    <p><i class="fa-solid fa-briefcase"></i>3-6 Years</p>
-                    <p><i class="fa-solid fa-location-dot"></i>Hyderabad/Srcunderabad</p>
+                    <p>8</p>
+                    <p>Search Appearances</p>
                 </div>
-                <p>3D,CAD,Autodesk</p>
-                <p>Strong Mechanical CAD design experience of Sheet metal,structural and 3D modeling using A...</p>
-                <p class="time">Posted 5 days ago</p>
-                <p>Not Disclosed</p>
-                <h3>VIEW ALL</h3>
-             </div>
-            </a>
-             <div id="newalerts">
-                <h3>New Jobs in My Job Alerts</h3>
-                <hr>
-                 <div id="newalert"><h4>BPO for Freshers</h4>
-                    <p>Universal Manpower Online</p>
-                    <div>
-                        <p><i class="fa-solid fa-briefcase"></i>1-5 Years</p>
-                        <p><i class="fa-solid fa-location-dot"></i>Bangalore/Bengaluru</p>
-                    </div>
-                    <p>BBA,BTech Fresher,BCA</p>
-                    <p>Customer care officer employment in on Phonepe Fresher payrole</p>
-                    <p class="time">Posted 3 days ago</p>
-                    <p>Not Disclosed</p>
-                    <h3>VIEW ALL</h3></div>
+                <div>
+                    <p>6</p>
+                    <p>Recruiter Actions</p>
+                </div>
                 
-             </div>
-             <div id="application">
-                <div id="leftapp">
-                    <h3>New Recruiter Messages</h3>
-                <hr>
-                <p>You have applied for 1 JOB(s) in last 30 days</p>
-                <p>Daily Limit of Application: 50</p>
-                </div>
-                <div id="rightapp">
-                    <h3>New Recruiter Messages</h3>
-                <hr>
-                <p>You have 0 saved job(s) till now.</p>
-                <h3>VIEW ALL</h3>
-                </div>
-             </div>
-             <h2 id="rec">Recruiters</h2>
-             <div id="recruiters">
-                <h3>New Recruiter Messages</h3>
-                <hr>
-                <p>You do not have any unread message. Messages received from different recruiters will appear in this section.</p>
-             </div>
-             <div id="connections">
-                <h3>Recruiter Connections</h3>
-                <hr>
-                <div id="connection_lower">
-                    <div id="left_connection">
-                        <div>
-                            <h1>00</h1>
-                            <h1>00</h1>
-                        </div>
-                        <div>
-                          <p>Credits</p>
-                          <p>Purchased</p>
-                          <p>Credit</p>
-                          <p>Remaining</p>
-                        </div>
-                    </div>
-                    <div id="right_connection">
-                        <p>Buy recruiter connections credits to contact more recruiters hiring in your domain.</p>
-                        <button>BUY CREDITS</button>
-                        <h3>VIEW ALL</h3>
-                    </div>
-                </div>
-             </div>
-          </div>
-          <div id="rightcard">
-             <div id="profileinfo">
-                 
-             </div>
-             <div id="barcode">
-                 <div id="leftbar">
-                     <h3>Get real-time job updates & instant notifications only on the app!</h3>
-                     <div>
-                         <p>Available on</p>
-                         <img src="https://static.naukimg.com/s/5/105/i/play-store.png" alt="">
-                         <img src="https://static.naukimg.com/s/5/105/i/app-store.png" alt="">
-                     </div>
-                 </div>
-                 <div id="rightbar">
-                     <img src="https://static.naukimg.com/s/5/105/i/qrcode.png" alt="">
-                     <p>Scan to download</p>
-                 </div>
-             </div>
-             <div id="service">
-                 <img src="https://static.naukimg.com/s/4/123/i/ffLogo.png" alt="">
-                 <h3>Naukri Services you might be interested in</h3>
-                 <h3>Be a Priority Applicant</h3>
-                 <p>Increase your chances of getting shortlisted for the applied jobs and receiving calls from recruiters.</p>
-                 <h3 class="knowmore">KNOW MORE</h3>
-                 <H4>Increase your visibility by upto 3 times</H4>
-                 <p>Get your profile marked as 'Featured' and get a higher rank when recruiters search for resumes</p>
-                 <h3 class="knowmore">KNOW MORE</h3>
-                 <p>Call 1800-572-5557 now! (Toll-free)</p>
-             </div>
-             <div id="faq">
-                 <h3>FAQ</h3>
-                 <hr>
-                 <p>Click here for frequently asked questions.</p>
-             </div>
-          </div>
+            </div>
+            <div id="booster">
+                <p>3x boost to your profile performance explore</p>
+                <p>Paid Service</p>
+            </div>
+          
         </div>
-
-        <div id="footer">
-           
+        <div id="barcode">
+            <div id="leftbar">
+                <h3>Get real-time job updates & instant notifications only on the app!</h3>
+                <div>
+                    <p>Available on</p>
+                    <img src="https://static.naukimg.com/s/5/105/i/play-store.png" alt="">
+                    <img src="https://static.naukimg.com/s/5/105/i/app-store.png" alt="">
+                </div>
+            </div>
+            <div id="rightbar">
+                <img src="https://static.naukimg.com/s/5/105/i/qrcode.png" alt="">
+                <p>Scan to download</p>
+            </div>
         </div>
-   
+        <div id="service">
+            <img src="https://static.naukimg.com/s/4/123/i/ffLogo.png" alt="">
+            <h3>Naukri Services you might be interested in</h3>
+            <h3>Be a Priority Applicant</h3>
+            <p>Increase your chances of getting shortlisted for the applied jobs and receiving calls from recruiters.</p>
+            <h3 class="knowmore">KNOW MORE</h3>
+            <H4>Increase your visibility by upto 3 times</H4>
+            <p>Get your profile marked as 'Featured' and get a higher rank when recruiters search for resumes</p>
+            <h3 class="knowmore">KNOW MORE</h3>
+            <p>Call 1800-572-5557 now! (Toll-free)</p>
+        </div>
+        <div id="faq">
+            <h3>FAQ</h3>
+            <hr>
+            <p>Click here for frequently asked questions.</p>
+        </div>
+    </div>
+</div>
 
-    
+<div id="footer"></div>
 
-    
-   
+ 
 </body>
 </html>
+
+
+
+
+
+
+
 <script type="module">
     import {navbar,footer} from './script/navbar.js'
 
@@ -1545,8 +1309,8 @@ function search(){
     var info=document.querySelector("#query").value;
     localStorage.setItem("information",JSON.stringify(info))
     window.location.href="recomendedjob.html"
-    info.location.reload();
  
+    document.querySelector("#query").value=null;
  console.log(info)
 }
 

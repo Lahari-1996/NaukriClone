@@ -1,9 +1,13 @@
+
+
 function navbar(){
-    return `<div id="left">
-    <a href="home.html"> <img src="https://static.naukri.com/s/4/100/i/naukri_Logo.png" alt="logo"></a>
+    return `
+    <div id="left">
+    <a href="home.html"> <img src="https://static.naukri.com/s/4/100/i/naukri_Logo.png" alt="logo" style="width:60%; margin-top: -30px;"></a>
         
-    </div>
-    <div class="mid">
+    </div> 
+
+<div class="mid">
     <ul>
     <li class="active"><a href="job.html">JOBS</a>
        <div class="jobchild">
@@ -143,48 +147,48 @@ function navbar(){
 
 </ul>
     </div>
-    
+
+
     <div class="right">
-    <ul>
-    <li><a href="#"><i class="fa-regular fa-bell"></i></a>
-        <div class="rightchild">
-            <ul>
-                <li>Job Recommendations</li>
-                <li>Application Status</li>
-                <li>Interior Designer Applied</li>
-                <li>Pending Actions</li>
-                <li>Verify Mobile Number</li>
-                <li>Recomended Skills</li>
-                <li>Engineering Design</li>
-                <li>Recruiter Searches</li>
-            </ul>
+        <ul>
+        <li><a href="#"><i class="fa-regular fa-bell" style="font-size:24px"></i></a>
+            <div class="rightchild">
+                <ul>
+                    <li>Job Recommendations</li>
+                    <li>Application Status</li>
+                    <li>Interior Designer Applied</li>
+                    <li>Pending Actions</li>
+                    <li>Verify Mobile Number</li>
+                    <li>Recomended Skills</li>
+                    <li>Engineering Design</li>
+                    <li>Recruiter Searches</li>
+                </ul>
+        
+            </div>
+        </li>
     
+        <li><a href="profile.html">MY NAUKRI</a>
+         <div class="rightchild">
+             <ul>
+                 <li>Edit Profile</li>
+                 <li>Recomended Jobs</li>
+                 <li>Profile Performance</li>
+                 <li>Recruiter Messages</li>
+                 <li>Application Status</li>
+                 <li>Manage Alerts</li>
+             </ul>
+             <ul>
+                 <li>Saved Jobs</li>
+                 <li>Settings</li>
+                 <li>My Fastforward Services</li>
+                 <li>Logout</li>
+                 
+             </ul>
+         </div>
+       </li>
+    </ul>
         </div>
-    </li>
-
-    <li><a href="profile.html">MY NAUKRI</a>
-     <div class="rightchild">
-         <ul>
-             <li>Edit Profile</li>
-             <li>Recomended Jobs</li>
-             <li>Profile Performance</li>
-             <li>Recruiter Messages</li>
-             <li>Application Status</li>
-             <li>Manage Alerts</li>
-         </ul>
-         <ul>
-             <li>Saved Jobs</li>
-             <li>Settings</li>
-             <li>My Fastforward Services</li>
-             <li>Logout</li>
-             
-         </ul>
-     </div>
-   </li>
-</ul>
-    </div>
-        `
-
+    `
 }
 
 
@@ -292,11 +296,6 @@ function footer(){
                     <div><img src="https://customercarecontacts.com/wp-content/uploads/2018/06/naukrigulf-logo.jpg" alt="naukrigulf"></div>
                     <div><img src="http://w10.naukri.com/mailers/tips_04may10/gifs/logo.gif" alt="firstnaukri"></div>
                     <div><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/h6oclq7lq9rqqb0hze3d" alt="brijj"></div>
-                
-                <div><img src="https://media-exp1.licdn.com/dms/image/C4E0BAQFTbt5HmwY9HA/company-logo_200_200/0/1519904647162?e=2147483647&v=beta&t=9QA6FHaba1P_17gG7NrtA0KW3pSqLWxKpvtAADtL1Sc" alt="allcheckdeal"></div>
-                <div><img src="https://images.shiksha.ws/public/images/shareThumbnail.jpg" alt="siksha"></div>
-                <div><img src="https://m.economictimes.com/thumb/msid-77048166,width-1200,height-900,resizemode-4,imgsize-72290/policybazaar.jpg" alt="policybazzar"></div>
-
                 
                 </div>
             </marquee>
