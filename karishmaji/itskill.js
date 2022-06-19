@@ -7,7 +7,7 @@ var obj={
     
 }
 arr2.push(obj)
-window.location.href="/login/profile.html"
+window.location.href="../karishmaji/profile.html"
 console.log(1)
 localStorage.setItem("itskill",JSON.stringify(arr2));
 }

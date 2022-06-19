@@ -13,10 +13,17 @@ function login(){
     {
 
         count++;
-        window.location.href="profile.html";
+        window.location.href="../lahari/home.html";
         alert("login successfull")
     
     dataji.push(el)
+        }
+        else{
+            
+
+
+    alert("login fail")
+
         }
 console.log(el)
 
@@ -26,10 +33,6 @@ localStorage.setItem("login_data",JSON.stringify(register))
     
 
 
-if(count==0)
-{
-    alert("login fail")
-}
 document.getElementById("nameji").value=" ";
 document.getElementById("passwordji").value=" ";
 }
