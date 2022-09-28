@@ -1,7 +1,7 @@
 # NaukriClone
 
 Finding the right job made easy with Naukri.com.
-In this website user is be able to see different job openings and can apply to various companies.
+In this website user is  able to see different job openings and can apply to various companies.
 
 Used:-->HTML,CSS,Javascript,Import,Export
 
