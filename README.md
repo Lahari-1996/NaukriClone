@@ -1,9 +1,9 @@
 # NaukriClone
 
-Finding the right job made easy with Naukri.com.
+Finding the right job made easy with Naukri.com
 In this website user is  able to see different job openings and can apply to various companies.
 
-Used:-->HTML,CSS,Javascript,Import,Export
+Tech Stacks Used:-->HTML,CSS,Javascript,Import,Export
 
 Members:--->
 Lahari Pattanayak(Home page and tool page)
