@@ -27,3 +27,23 @@ Sahil Lagad(Landing page and jobs page)
 Komal Konpar(Job detail page and job category filter page)
 
 Karishma Chauhan(Login-Signup and profile page)
+
+<h3>Screenshots</h3>
+
+<h4>Home</h4>
+![Screenshot (384)](https://user-images.githubusercontent.com/101395093/208420106-3f94bedc-7f65-4701-a8da-613ea0d28bfc.png)
+
+<h4>login page</h4>
+
+
+![Screenshot (385)](https://user-images.githubusercontent.com/101395093/208420231-b6261a15-75e9-4467-bd4d-950859d15759.png)
+
+<h4>Signup page</h4>
+
+![Screenshot (386)](https://user-images.githubusercontent.com/101395093/208420297-95f0be24-1ea6-46dd-bbcb-ead25cfffab1.png)
+
+<h4>Job page</h4>
+![Screenshot (387)](https://user-images.githubusercontent.com/101395093/208420401-f7e93737-16ec-4435-a21d-444278b7fd00.png)
+
+
+
